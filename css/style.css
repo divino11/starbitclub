@@ -3844,6 +3844,20 @@ body {
     }
 }
 
+@media (width: 1200px) {
+    .bg4:after {
+        right: -8px;
+        height: 619px;
+    }
+
+
+    .bg4:before {
+        height: 206px;
+        top: 824px;
+        right: -8px;
+    }
+}
+
 @media (max-width: 480px) and (orientation: portrait) {
     body {
         margin: 0 !important;

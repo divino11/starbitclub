@@ -1433,6 +1433,13 @@ require_once "db.php";
                     на криптовалютных биржах <span class="red">после регистрации.</span></p>
 
                 <a href="registration" class="reg-ready">Регистрация</a>
+                <script type="text/javascript" src="//vk.com/js/api/openapi.js?153"></script>
+
+                <!-- VK Widget -->
+                <div id="vk_groups"></div>
+                <script type="text/javascript">
+                    VK.Widgets.Group("vk_groups", {mode: 3, width: "300"}, 156978466);
+                </script>
             </div>
         </div>
     </div>
