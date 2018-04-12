@@ -3180,6 +3180,11 @@ body {
     padding-bottom: 20px;
 }
 
+.b24-widget-button-wrapper.b24-widget-button-position-bottom-left.b24-widget-button-visible {
+    left: 10px !important;
+    bottom: 10px !important;
+}
+
 @media (min-width: 1367px) and (max-width: 4000px) {
     .videoMarginFix {
         margin-top: 1%;

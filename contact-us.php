@@ -23,7 +23,7 @@
             <div class="col-md-3">
                 <a href=""><img src="img/skype.png" class="social" alt=""></a>
                 <p class="social-text">Skype:<br>
-                    Bitcoin Stars Support</p>
+                    StarBitClub Support</p>
             </div>
             <div class="col-md-3">
                 <a href=""><img src="img/email.png" class="social" alt=""></a>

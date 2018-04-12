@@ -116,7 +116,7 @@ require_once "db.php";
             <div class="col-md-6 col-xs-6 col-sm-6">
                 <div class="arrow-angle-fa">
                     <p class="text-arrow">Узнать больше<br>
-                        о Bitcoin Stars</p>
+                        о StarBitClub</p>
                     <a class="scroll" href="#aboutBS"><i class="fas fa-angle-down" style="margin-top: 25px;"></i></a>
                 </div>
             </div>
@@ -1454,7 +1454,7 @@ require_once "db.php";
                     Новости криптовалют.</p>
             </div>
             <div class="col-md-3 col-xs-3 col-sm-3">
-                <p class="copyright">&copy; 2017-2018 Bitcoin Stars.</p>
+                <p class="copyright">&copy; 2017-2018 StarBitClub.</p>
             </div>
             <div class="col-md-4 col-xs-4 col-sm-4 col-money">
                 <ul>
@@ -1583,7 +1583,7 @@ if ($akcia_banner == 0) {
             if ( $.cookie("popup__learn") == null ) {
                 var popupLearn = $('.popup_learn');
                 $(window).scroll(function () {
-                    if ($(this).scrollTop() > 4000 && $(this).scrollTop() < 4020) {
+                    if ($(this).scrollTop() > 7000 && $(this).scrollTop() < 7020) {
                         popupLearn.css("display", "block");
                     }
                 });

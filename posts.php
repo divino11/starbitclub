@@ -200,7 +200,7 @@ mysqli_set_charset($link, 'utf8');
             <div class="col-md-4">
                 <p>Телефон горячей линии</p>
                 <p><a href="tel:88005553535">+8 (800) 555-35-35</a></p>
-                <p class="copyright">&copy; 2017-2018 Bitcoin Stars - закрытый трейдерский клуб.<br>Все права защищены.
+                <p class="copyright">&copy; 2017-2018 StarBitClub - закрытый трейдерский клуб.<br>Все права защищены.
                 </p>
             </div>
             <div class="col-md-4 col-money">

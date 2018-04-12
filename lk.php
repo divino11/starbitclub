@@ -334,7 +334,7 @@ if (empty($id_ses)) {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <button type="button" data-toggle="modal" data-target="#oplataPremium" name="btnPremium" class="btn-join" id="step4">Оплатить</button>
+                                        <button type="button" data-toggle="modal" data-target="#oplataPremium" name="btnPremium" class="btn-join">Оплатить</button>
                                     </td>
                                 </tr>
                             </table>
@@ -347,25 +347,29 @@ if (empty($id_ses)) {
             </div>
             <div id="menu2" class="tab-pane fade centered">
                 <p class="title">Данные пользователя</p>
+                <form id="changeProfile">
                 <div class="row">
                     <div class="col-md-6">
+                        <input type="text" class="field-change" style="display: none;" name="id" value="<?php echo $id_ses; ?>">
                         <p class="name-change-field">Фамилия:</p>
-                        <input type="text" class="field-change" disabled value="<?php echo $lastname; ?>">
+                        <input type="text" class="field-change" name="lastname"  value="<?php echo $lastname; ?>">
                         <p class="name-change-field">Имя:</p>
-                        <input type="text" class="field-change" disabled value="<?php echo $firstname; ?>">
+                        <input type="text" class="field-change" name="firstname"  value="<?php echo $firstname; ?>">
                         <p class="name-change-field">Email:</p>
-                        <input type="email" class="field-change" disabled value="<?php echo $email; ?>">
+                        <input type="email" class="field-change" name="email-reg"  value="<?php echo $email; ?>">
                         <p class="name-change-field">Телефон:</p>
-                        <input type="text" class="field-change" disabled value="<?php echo $phone; ?>">
+                        <input type="text" class="field-change" name="phone"  value="<?php echo $phone; ?>">
                         <p class="name-change-field">Дата регистрации:</p>
                         <input type="text" class="field-change" disabled value="<?php echo $date; ?>">
                     </div>
                     <div class="col-md-6">
                         <p class="name-change-field">Пароль:</p>
-                        <input type="password" class="field-change" disabled value="<?php echo $pass; ?>">
+                        <input type="password" class="field-change" name="pas-reg" value="<?php echo $pass; ?>">
                     </div>
+                    <div class="resultChange" style="z-index: 99999999; position:relative; color: #00c700;"></div>
                 </div>
-                <a href="changeProfile.php?id=<?php echo $id_ses ?>" class="change-data">Изменить</a>
+                <button class="change-data" type="submit">Изменить</button>
+                </form>
             </div>
             <div id="menu3" class="tab-pane fade">
                 <p class="news">Новости</p>
@@ -419,7 +423,7 @@ if (empty($id_ses)) {
                 <a href="/contact-us.php">Контакты</a>
                 <p>Телефон горячей линии</p>
                 <!--<p><a href="tel:88005553535">+8 (800) 555-35-35</a></p>-->
-                <p class="copyright">&copy; 2017-2018 Bitcoin Stars - закрытый трейдерский клуб.<br>Все права защищены.</p>
+                <p class="copyright">&copy; 2017-2018 StarBitClub - закрытый трейдерский клуб.<br>Все права защищены.</p>
             </div>
             <div class="col-md-4 col-money">
                 <ul>
@@ -581,6 +585,20 @@ if (empty($id_ses)) {
     document.getElementById('telegram__id').onkeypress = function (e) {
         return !(/[А-Яа-яA-Za-z ]/.test(String.fromCharCode(e.charCode)));
     }
+</script>
+<script>
+    $("#changeProfile").submit(function () {
+        $.ajax({
+            type: "POST",
+            url: "changeProfileAjax.php", //Change
+            data: $("#changeProfile").serialize(),
+            success: function success(data) {
+                console.log('success!');
+                $(".resultChange").text('Данные успешно измененны!');
+            }
+        });
+        return false;
+    });
 </script>
 <!-- Begin Verbox {literal} -->
 <script type='text/javascript'>
