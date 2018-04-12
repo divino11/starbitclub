@@ -114,7 +114,6 @@ Skype:
         } elseif ($text == "Курс") {
             $json = file_get_contents('https://api.coinmarketcap.com/v1/ticker/?limit=10');
             $data = json_decode($json);
-
             $price0 = $data[0]->price_usd;
             $name0 = $data[0]->symbol;
             $price1 = $data[1]->price_usd;
