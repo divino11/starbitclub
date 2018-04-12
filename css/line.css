@@ -1,0 +1,184 @@
+.span_img100 {
+    animation: lineDown 4s linear;
+}
+
+@-webkit-keyframes lineDown {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 79px;
+    }
+}
+
+
+.span2_img100 {
+    animation: lineDown1 4s linear;
+}
+
+@-webkit-keyframes lineDown1 {
+    from {
+        height: 0px;
+    }
+    to {
+        height: 126px;
+    }
+}
+
+.span2_img100:after {
+    animation: lineDown2 6s linear;
+}
+
+@-webkit-keyframes lineDown2 {
+    from {
+        width: 0;
+        height: -50px;
+    }
+    to {
+        width: 500px;
+        height: 160px;
+    }
+}
+
+.span_two_img100:before {
+    animation: lineDown3 6s linear;
+}
+
+@-webkit-keyframes lineDown3 {
+    from {
+        width: 1%;
+    }
+    to {
+        width: 31%;
+    }
+}
+
+.span_two_img100:after {
+    animation: lineDown4 6s linear;
+}
+
+@-webkit-keyframes lineDown4 {
+    from {
+        width: 1%;
+    }
+    to {
+        width: 31%;
+    }
+}
+
+.line_top {
+    animation: lineDown5 3s linear;
+}
+
+@-webkit-keyframes lineDown5 {
+    from {
+        height: 0;
+    }
+    to {
+        height: 55px;
+    }
+}
+
+.line_bot {
+    animation: lineDown6 3s linear;
+}
+
+@-webkit-keyframes lineDown6 {
+    from {
+        height: 0;
+    }
+    to {
+        height: 98px;
+    }
+}
+
+.line_bottom {
+    animation: lineDown7 4s linear;
+}
+
+@-webkit-keyframes lineDown7 {
+    from {
+        height: 0;
+    }
+    to {
+        height: 153px;
+    }
+}
+
+.title-bg4:after {
+    animation: lineDown8 3s linear;
+}
+
+@-webkit-keyframes lineDown8 {
+    from {
+        width: 0;
+    }
+    to {
+        width: 71px;
+    }
+}
+
+.bg10>.line_bottom {
+    animation: lineDown9 4s linear;
+}
+
+@-webkit-keyframes lineDown9 {
+    from {
+        height: 0;
+    }
+    to {
+        height: 210px;
+    }
+}
+
+.line_bottom_sec {
+    animation: lineDown10 4s linear;
+}
+
+@-webkit-keyframes lineDown10 {
+    from {
+        height: 0;
+    }
+    to {
+        height: 166px;
+    }
+}
+
+.line_bottom_last {
+    animation: lineDown11 10s linear;
+}
+
+@-webkit-keyframes lineDown11 {
+    from {
+        height: 0;
+    }
+    to {
+        height: 780px;
+    }
+}
+
+.bg4:after {
+    animation: lineDown12 8s linear;
+}
+
+@-webkit-keyframes lineDown12 {
+    from {
+        height: 0;
+    }
+    to {
+        height: 610px;
+    }
+}
+
+.line-quest {
+    animation: linedown13 4s linear;
+}
+
+@-webkit-keyframes linedown13 {
+    from {
+        height: 0;
+    }
+    to {
+        height: 395px;
+    }
+}

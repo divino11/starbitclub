@@ -1,0 +1,11 @@
+{
+    "require": {
+        "irazasyed/telegram-bot-sdk": "2.0"
+    }
+}
+{
+    "require": {
+        "tregismoreira/coinmarketcap-php": "dev-master"
+    }
+}
+

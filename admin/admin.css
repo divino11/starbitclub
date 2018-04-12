@@ -1,0 +1,201 @@
+body {
+    background-color: #000;
+}
+
+.form-reg {
+    padding-top: 80px;
+    background: url("../img/bg1.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.form-white-reg {
+    background-color: rgba(255,255,255, .3);
+    border-radius: 10px;
+    padding: 0 20px 120px 20px;
+}
+
+.logo-reg {
+    width: 100px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+}
+
+.my-menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 80px;
+    background-color: rgba(0,0,0, .8);
+    width: 100%;
+    z-index: 99999;
+}
+
+.logo-menu {
+    width: 70%;
+    padding-top: 12px;
+}
+
+.col-menu li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 50px;
+    padding-top: 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.col-menu li a {
+    color: #fff;
+    z-index: 999;
+    position: relative;
+}
+
+.col-menu li a:hover {
+    background: -webkit-linear-gradient(left, #985f05 0%, #c2900b 19%, #fff055 66%, #cca00b 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.menu-people {
+    width: 18%;
+    padding-right: 15px;
+}
+
+.social-menu {
+    width: 30%;
+    padding-right: 5px;
+    padding-top: 18px;
+    float: left;
+}
+
+/* Страница выбора действия с новостями */
+
+.admin-news {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.admin-news button {
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn-post {
+    padding: 13px;
+}
+
+/* Страница добавления новости */
+
+.admin-add-post {
+    padding-top: 30px;
+}
+
+.admin-add-post .field-add-post {
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.admin-add-post .add-post {
+    width: 60%;
+    padding: 12px;
+    margin: auto;
+    display: block;
+}
+
+.admin-add-post .col-post {
+    width: 20%;
+    float: left;
+    color: #fff;
+    height: 50px;
+}
+
+.id-post {
+    width: 30px;
+    color: #000;
+    text-align: center;
+    border: none;
+}
+
+.date-post {
+    font-size: 10px;
+}
+
+.shareTelegram-post {
+    margin: 5px auto !important;
+    display: block;
+}
+
+.streamTelegram {
+    width: 100%;
+    border: none;
+    padding: 2px;
+    background-color: #8d8d8d;
+}
+
+.admin-add-post .message-success {
+    text-align: center;
+    font-size: 18px;
+    color: #00c700;
+}
+
+.admin-add-post .message-error {
+    text-align: center;
+    font-size: 18px;
+    color: red;
+}
+
+.label__info {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: left;
+}
+
+.chosen-container.chosen-container-multi {
+    width: 100% !important;
+    margin-top: 20px !important;
+}
+
+/* Страница удаление новости */
+
+.admin-delete-post .col-post {
+    width: 25%;
+    float: left;
+    color: #fff;
+    height: 60px;
+}
+
+.default-field {
+    padding-top: 70px;
+}
+
+.btnAdmin {
+    padding: 13px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 50%;
+}
+
+/*   СТРАНИЦА РЕДАКТИРОВАНИЯ НОВОСТЕЙ   */
+
+.titleEditPost {
+    text-align: center;
+    font-size: 36px;
+    color: #fff;
+}
+
+.col-post {
+    width: 20%;
+    float: left;
+    color: #fff;
+    height: 50px;
+}
