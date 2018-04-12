@@ -2947,6 +2947,239 @@ body {
     background-color: #69c7fa;
 }
 
+.popup_learn {
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 10%;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.popup_container {
+    margin: auto;
+    width: 450px;
+    padding: 20px 50px;
+    background-color: rgba(0,0,0,0.95);
+    border-radius: 5px;
+    position: relative;
+}
+
+.close__popup1 {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #fff !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.close__popup {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    color: #fff !important;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.learn__img {
+    margin: auto;
+    display: block;
+    width: 110px;
+    padding-bottom: 20px;
+}
+
+.learn__text {
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+}
+
+.learn__subtext {
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+}
+
+.learn__desc {
+    font-size: 15px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+.popup_call {
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 10%;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.popup_consult {
+    margin: auto;
+    width: 600px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.95);
+    border-radius: 5px;
+    position: relative;
+}
+
+.consult__title {
+    font-size: 25px;
+    color: #fff;
+    padding-left: 10px;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #fff;
+}
+
+.consult__text {
+    text-align: left;
+    color: #fff;
+}
+
+.consultForm__input1 {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    padding: 5px 5px 5px 50px;
+    background-color: #444;
+    color: #fff;
+    position: relative;
+}
+
+.consultForm__input2 {
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    padding: 5px 5px 5px 50px;
+    background-color: #444;
+    color: #fff;
+    position: relative;
+}
+
+.labelForConsult1:before {
+    content: '';
+    background: url(../img/form-phone.png) no-repeat;
+    position: absolute;
+    width: 26px;
+    height: 27px;
+    left: 35px;
+    top: 124px;
+    z-index: 999;
+    background-size: 70%;
+}
+
+.labelForConsult2:before {
+    content: '';
+    background: url(../img/form-people.png) no-repeat;
+    position: absolute;
+    width: 26px;
+    height: 27px;
+    left: 37px;
+    top: 172px;
+    z-index: 999;
+    background-size: 67%;
+}
+
+.consultForm__btn:before {
+    content: '';
+    background: url(../img/form-btn.png) no-repeat;
+    position: absolute;
+    width: 26px;
+    height: 27px;
+    left: 37px;
+    bottom: 50px;
+    z-index: 999;
+    background-size: 67%;
+}
+
+.consultForm__input1::placeholder {
+    color: #fff;
+}
+
+.consultForm__input2::placeholder {
+    color: #fff;
+}
+
+.consultForm__btn {
+    float: left;
+    width: 100%;
+    border: none;
+    text-align: left;
+    padding: 5px 5px 5px 50px;
+    color: #fff;
+    background: -moz-linear-gradient(to right, #e9c185 0%, #a28154 19%, #c29a5d 66%, #90682c 100%);
+    background: -webkit-linear-gradient(to right, #e9c185 0%, #a28154 19%, #c29a5d 66%, #90682c 100%);
+    background: linear-gradient(to right, #e9c185 0%, #a28154 19%, #c29a5d 66%, #90682c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#985f05', endColorstr='#cca00b', GradientType=1);
+}
+
+.consult__desc {
+    text-align: left;
+}
+
+.consult__desc a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.consultThanks {
+    margin: auto;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-top: 10%;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.popup_consultThanks {
+    margin: auto;
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.95);
+    border-radius: 5px;
+    position: relative;
+}
+
+.thanksPopup {
+    margin: auto;
+    display: block;
+    width: 60px;
+}
+
+.thanksTitle {
+    font-size: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+.thanksDesc {
+    color: #fff;
+    padding-bottom: 20px;
+}
+
 @media (min-width: 1367px) and (max-width: 4000px) {
     .videoMarginFix {
         margin-top: 1%;
@@ -3902,6 +4135,14 @@ body {
     .btcstar {
         width: 90%;
     }
+
+    .modal-dialog {
+        margin: auto;
+    }
+
+    .modal {
+        padding-top: 5%;
+    }
 }
 
 @media (min-width: 667px) and (max-width: 767px) {
@@ -4039,6 +4280,14 @@ body {
 
     .col-money li:nth-child(3) {
         margin-left: -10px;
+    }
+
+    .modal-dialog {
+        margin: auto;
+    }
+
+    .modal {
+        padding-top: 5%;
     }
 }
 

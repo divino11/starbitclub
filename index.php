@@ -59,30 +59,6 @@ require_once "db.php";
     });
 </script>
 <div id="device_rotate"></div>
-<!--<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">WebSiteName</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Page 1</a></li>
-                <li><a href="#">Page 2</a></li>
-                <li><a href="#">Page 3</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>-->
 <a href="#trailer" class="arrow_up_link"><i class="fas fa-arrow-circle-up arrow_up"></i></a>
 <div class="logo" id="trailer">
     <div class="container">
@@ -318,7 +294,7 @@ require_once "db.php";
                 которые с большой вероятностью <span class="red">принесут вам прибыль.</span>
             </div>
             <div class="items col-md-12 col-lg-12">
-                <div class="item col-md-4 col-lg-4 fadeInUpBig wow" data-wow-delay="1s" data-wow-duration="2s">
+                <div class="item col-md-4 col-lg-4 fadeInUpBig wow" data-wow-delay="0.5s" data-wow-duration="2s">
                     <div class="element">
                         <div class="icon"><img src="img/profit-1.png" alt=""></div>
                         <div class="title">Z Cash</div>
@@ -330,7 +306,7 @@ require_once "db.php";
                         <div class="percent">36%</div>
                     </div>
                 </div>
-                <div class="item col-md-4 col-lg-4 fadeInUpBig wow" data-wow-delay="1.4s" data-wow-duration="2s">
+                <div class="item col-md-4 col-lg-4 fadeInUpBig wow" data-wow-delay="0.8s" data-wow-duration="2s">
                     <div class="element">
                         <div class="icon"><img src="img/profit-2.png" alt=""></div>
                         <div class="title">Bitcoin</div>
@@ -342,7 +318,7 @@ require_once "db.php";
                         <div class="percent">222%</div>
                     </div>
                 </div>
-                <div class="item col-md-4 col-lg-4 fadeInUpBig wow" data-wow-delay="1.8s" data-wow-duration="2s">
+                <div class="item col-md-4 col-lg-4 fadeInUpBig wow" data-wow-delay="1.1s" data-wow-duration="2s">
                     <div class="element etherium">
                         <div class="icon"><img src="img/profit-3.png" alt=""></div>
                         <div class="title">Ethereum</div>
@@ -379,7 +355,7 @@ require_once "db.php";
                     </p>
                 </div>
             </div>
-            <div class="col-md-6 fadeIn wow" data-wow-delay="1s" data-wow-duration="1s">
+            <div class="col-md-6 fadeIn wow" data-wow-delay="0.5s" data-wow-duration="1s">
                 <div class="col-md-3">
                     <img class="img40" src="img/howit2.png" alt="">
                 </div>
@@ -394,7 +370,7 @@ require_once "db.php";
             </div>
         </div>
         <div class="row col-howit">
-            <div class="col-md-6 fadeIn wow" data-wow-delay="1.2s" data-wow-duration="1s">
+            <div class="col-md-6 fadeIn wow" data-wow-delay="0.5s" data-wow-duration="1s">
                 <div class="col-md-3">
                     <img class="img40" src="img/howit3.png" alt="">
                 </div>
@@ -406,7 +382,7 @@ require_once "db.php";
                     </p>
                 </div>
             </div>
-            <div class="col-md-6 fadeIn wow" data-wow-delay="1.7s" data-wow-duration="1s">
+            <div class="col-md-6 fadeIn wow" data-wow-delay="0.5s" data-wow-duration="1s">
                 <div class="col-md-3">
                     <img class="img40" src="img/howit4.png" alt="">
                 </div>
@@ -422,7 +398,7 @@ require_once "db.php";
             </div>
         </div>
         <div class="row col-howit">
-            <div class="col-md-6 fadeIn wow" data-wow-delay="2.2s" data-wow-duration="1s">
+            <div class="col-md-6 fadeIn wow" data-wow-delay="0.5s" data-wow-duration="1s">
                 <div class="col-md-3">
                     <img class="img40" src="img/howit5.png" alt="">
                 </div>
@@ -435,7 +411,7 @@ require_once "db.php";
                     </p>
                 </div>
             </div>
-            <div class="col-md-6 fadeIn wow" data-wow-delay="2.7s" data-wow-duration="1s">
+            <div class="col-md-6 fadeIn wow" data-wow-delay="0.5s" data-wow-duration="1s">
                 <div class="col-md-3">
                     <img class="img40" src="img/howit6.png" alt="">
                 </div>
@@ -561,12 +537,12 @@ require_once "db.php";
                     <div class="name">Telegram</div>
                     <div class="text">напиши нам в Telegram!</div>
                 </div>
-                <div class="item col-md-4 col-lg-4 col-xs-4 col-sm-4 fadeInUpBig wow" data-wow-delay="0.9s">
+                <div class="item col-md-4 col-lg-4 col-xs-4 col-sm-4 fadeInUpBig wow" data-wow-delay="0.7s">
                     <div class="icon"><a href="#"><img src="img/on-connect-2.png" alt=""></a></div>
                     <div class="name">Online chat</div>
                     <div class="text">или здесь - на сайте!</div>
                 </div>
-                <div class="item col-md-4 col-lg-4 col-xs-4 col-sm-4 fadeInUpBig wow" data-wow-delay="1.3s">
+                <div class="item col-md-4 col-lg-4 col-xs-4 col-sm-4 fadeInUpBig wow" data-wow-delay="0.9s">
                     <div class="icon"><a href="#"><img src="img/on-connect-3.png" alt=""></a></div>
                     <div class="name">Online chat</div>
                     <div class="text">или здесь - на сайте!</div>
@@ -579,7 +555,7 @@ require_once "db.php";
     <div class="container">
         <p class="title">УСЛОВИЯ ЧЛЕНСТВА.</p>
         <div class="row">
-            <div class="col-md-3 col-xs-3 col-sm-3 wow fadeInLeft" data-wow-delay="0.6s">
+            <div class="col-md-3 col-xs-3 col-sm-3 wow fadeInLeft" data-wow-delay="0.5s">
                 <p class="condition-number wow fadeIn" data-wow-duration="4s">1</p>
                 <div class="ripples wow">
                     <div class="circle1 wow"></div>
@@ -685,7 +661,7 @@ require_once "db.php";
                     </tr>
                 </table>
             </div>
-            <div class="item col-md-4 col-lg-4 fadeIn wow" data-wow-delay="1s">
+            <div class="item col-md-4 col-lg-4 fadeIn wow" data-wow-delay="0.8s">
                 <table border="0" class="second">
                     <tr>
                         <th>VIP</th>
@@ -729,7 +705,7 @@ require_once "db.php";
                     </tr>
                 </table>
             </div>
-            <div class="item col-md-4 col-lg-4 fadeIn wow" data-wow-delay="1.4s">
+            <div class="item col-md-4 col-lg-4 fadeIn wow" data-wow-delay="1s">
                 <table border="0">
                     <tr>
                         <th>Premium</th>
@@ -787,34 +763,15 @@ require_once "db.php";
             <div class="item col-md-4 col-lg-4 fadeInUpBig wow" data-wow-delay="0.5s">
                 <a href="#"><img src="img/bihance1.png" alt=""></a>
             </div>
-            <div class="item col-md-4 col-lg-4 fadeInUpBig wow" data-wow-delay="1s">
+            <div class="item col-md-4 col-lg-4 fadeInUpBig wow" data-wow-delay="0.8s">
                 <a href="#"><img src="img/partners-best.png" alt=""></a>
             </div>
-            <div class="item col-md-4 col-lg-4 fadeInUpBig wow" data-wow-delay="1.5s">
+            <div class="item col-md-4 col-lg-4 fadeInUpBig wow" data-wow-delay="1.1s">
                 <a href="#"><img src="img/partners-exmo.png" alt=""></a>
             </div>
         </div>
     </div>
 </div>
-<!--<div class="container register">
-    <div class="row">
-        <p class="title">Хочешь заработать на криптовалюте ?<br>
-            Стань криптотрейдером !<br>
-            Зарегистрируйтесь на сайте и вам будет <br>
-            доступен бесплатный обучающий видеокурс <br>
-            криптотрейдинга</p>
-        <div class="ripples">
-            <div class="ripple ripple-1"></div>
-            <div class="ripple ripple-2"></div>
-            <div class="ripple ripple-3"></div>
-            <div class="ripple ripple-4"></div>
-        </div>
-        <p class="btnRegField">
-            <button class="btnReg">Зарегистрироваться</button>
-        </p>
-        <p class="description">О чём речь?</p>
-    </div>
-</div>-->
 <div class="row1">
     <div class="container">
         <div class="row what-is-crypto">
@@ -1132,7 +1089,7 @@ require_once "db.php";
                 </div>-->
             </div>
             <div class="col5-1">
-                <img src="img/dobicha-1.png" class="fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1s" alt="">
+                <img src="img/dobicha-1.png" class="fadeInUp wow" data-wow-duration="1s" data-wow-delay="1s" alt="">
                 <span class="line_right"></span>
                 <p class="text-bg4">Майнинг - один из
                     способов получение
@@ -1144,7 +1101,7 @@ require_once "db.php";
                     математических задач.</p>
             </div>
             <div class="col5-1">
-                <img src="img/dobicha-2.png" class="fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1.3s" alt="">
+                <img src="img/dobicha-2.png" class="fadeInUp wow" data-wow-duration="1s" data-wow-delay="1.3s" alt="">
                 <span class="line_right"></span>
                 <p class="text-bg4">Покупка криптовалют
                     у других людей,
@@ -1153,14 +1110,14 @@ require_once "db.php";
                     или форумов.</p>
             </div>
             <div class="col5-1">
-                <img src="img/dobicha-3.png" class="fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1.6s" alt="">
+                <img src="img/dobicha-3.png" class="fadeInUp wow" data-wow-duration="1s" data-wow-delay="1.6s" alt="">
                 <span class="line_right"></span>
                 <p class="text-bg4">Покупка криптовалют
                     через сайты-обменники,
                     или telegram-боты.</p>
             </div>
             <div class="col5-1">
-                <img src="img/dobicha-4.png" class="fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="1.9s" alt="">
+                <img src="img/dobicha-4.png" class="fadeInUp wow" data-wow-duration="1s" data-wow-delay="1.9s" alt="">
                 <span class="line_right"></span>
                 <span class="arrow_right"></span>
 
@@ -1443,12 +1400,6 @@ require_once "db.php";
                     При грамотной торговле криптовалютами на биржах <span class="red">ежемесячный доход</span>
                     может
                     составить от <span class="red">40 до 300% и более</span> от ваших инвестиций.</p>
-                <!--<div class="portfel-img">
-                    <img src="img/portfel.png" id="portfel" alt="portfel">
-                </div>
-                <p class="ready-bussines">НАЧНИ СВОЙ ПУТЬ НА РЫНКЕ КРИПТОВАЛЮТ С BITCOIN STARS.
-                    ЗАРЕГИСТРИРУЙСЯ НА НАШЕМ САЙТЕ И ПОЛУЧИ ДОСТУП К БЕСПЛАТНОМУ
-                    ОБУЧЕНИЮ АЗАМ КРИПТОТРЕЙДИНГА.</p>-->
             </div>
         </div>
     </div>
@@ -1513,26 +1464,51 @@ require_once "db.php";
         </div>
     </div>
 </div>
-<div class="modal fade" id="firstModal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <button class="close">×</button>
-            <div class="modal-body">
-                <img src="img/popup-icon.png" class="icon-popup" alt="">
-                <p class="title-modal">Остались вопросы?</p>
-                <p class="desc-modal">Оставьте заявку и мы свяжемся с вами в<br>
-                    ближайшую свободную минуту !</p>
-                <form id="modal1" class="centered">
-                    <input type="text" class="field-popup" required placeholder="ФИО:"><br>
-                    <input type="text" class="field-popup" required placeholder="Телефон:">
-                    <div class="fieldBtnPopup">
-                        <button class="sendForm">Отправить</button>
-                    </div>
-                </form>
-            </div>
-        </div>
+
+<div class="popup_learn" style="display: none;">
+    <div class="popup_container">
+        <a class="close__popup1">X</a>
+        <img class="learn__img" src="img/header1.png">
+        <p class="learn__text">Сделайте первый шаг на
+            рынке криптовалют.</p>
+        <p class="learn__subtext">Пройдите наш бесплатный
+            обучающий видеокурс.<span class="red">*</span></p>
+        <p class="learn__desc"><span class="red">*</span>Видеокурс будет доступен сразу после
+            регистрации и займет у вас не более 1 часа.</p>
+        <a href="registration.php" class="sendFormReady">Начать обучение</a>
     </div>
 </div>
+
+<div class="popup_call" style="display: none;">
+    <div class="popup_consult">
+        <a class="close__popup">X</a>
+        <p class="consult__title">Заказать звонок</p>
+        <p class="consult__text">Заполните информацию и мы свяжемся с вами в первую же
+            свободную минуту.</p>
+        <form id="consultForm">
+            <input type="hidden" name="title" value="Форма Бесплатная консультация">
+            <label class="labelForConsult1" for="consultForm__input1"></label>
+            <input type="tel" required placeholder="+7(___)___-__-__" name="consultPhone" id="consultForm__input1" class="consultForm__input1">
+            <label class="labelForConsult2" for="consultForm__input2"></label>
+            <input type="text" required placeholder="Ваше Имя" id="consultForm__input2" name="consultName" class="consultForm__input2">
+            <button type="submit" class="consultForm__btn">Заказать звонок</button>
+            <div id="resultQuestion" style="color: limegreen; text-align: center;"></div>
+        </form>
+        <p class="consult__desc">Нажимая на кнопку, вы соглашаетесь с нашей <a href="">политикой конфиденциальности</a></p>
+    </div>
+</div>
+
+<div class="consultThanks" style="display: none;">
+    <div class="popup_consultThanks">
+        <a class="close__popup">X</a>
+        <p class="consult__title">Заказать звонок</p>
+        <img src="img/thanksPopup.png" class="thanksPopup" alt="">
+        <p class="thanksTitle">Спасибо!</p>
+        <p class="thanksDesc">Мы свяжемся с вами
+            в первую же свободную минуту.</p>
+    </div>
+</div>
+
 <?php
 $query = 'SELECT * FROM `admin`';
 $result = mysqli_query($link, $query); //ответ базы запишем в переменную $result
@@ -1557,11 +1533,28 @@ if ($akcia_banner == 0) {
         </div>
     </div>
     <script>
+        //ЗАПИСЬ В КУКИ
         $('.closeSecond').click(function () {
             $('#secondModal').css("display", "none");
-            $('body').css("overflow-y", "scroll");
             $.cookie("secondModal", "12house", {expires: 0} );
         });
+
+        //ЗАПИСЬ В КУКИ
+        $('.close__popup1').click(function () {
+            $('.popup_learn').css("display", "none");
+            $.cookie("popup__learn", "12house", {expires: 0} );
+        });
+
+        $('.btn-logo').click(function () {
+            $('.popup_call').css("display", "block");
+        });
+
+        $('.close__popup').click(function () {
+            $('.popup_call').css("display", "none");
+            $('.consultThanks').css("display", "none");
+        });
+
+        //ПОПАП КОНКУРС
 
         $(document).ready(function ($) {
             if ( $.cookie("secondModal") == null ) {
@@ -1577,6 +1570,21 @@ if ($akcia_banner == 0) {
             }
         });
 
+        //ПОПАП ОБУЧЕНИЕ
+
+        $(document).ready(function ($) {
+            if ( $.cookie("popup__learn") == null ) {
+                var popupLearn = $('.popup_learn');
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 4000 && $(this).scrollTop() < 4020) {
+                        popupLearn.css("display", "block");
+                    }
+                });
+            } else {
+                $(".popup_learn").css("display", "none");
+            }
+        });
+
         $("#formQuestions").submit(function () {
             $.ajax({
                 type: "POST",
@@ -1585,8 +1593,21 @@ if ($akcia_banner == 0) {
                 success: function success(data) {
                     console.log('success!');
                     $('#resultQuestion').text('Ваша заявка успешно отправлена');
-                    $('#resultQuestion').reset();
-                    $('.line-quest')
+                    $('#formQuestions').reset();
+                }
+            });
+            return false;
+        });
+
+        $("#consultForm").submit(function () {
+            $.ajax({
+                type: "POST",
+                url: "mailConsult.php", //Change
+                data: $("#consultForm").serialize(),
+                success: function success(data) {
+                    console.log('success!');
+                    $('.popup_call').css("display", "none");
+                    $('.consultThanks').show();
                 }
             });
             return false;
