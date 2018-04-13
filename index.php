@@ -7,6 +7,7 @@ require_once "db.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <title>Title</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -31,7 +32,7 @@ require_once "db.php";
 </head>
 <body>
 <script>
-    $(document).ready(function () {
+    /*$(document).ready(function () {
         setInterval(function () {
             if (device.tablet() || device.mobile()) {
                 if (device.portrait()) {
@@ -56,7 +57,7 @@ require_once "db.php";
                 }
             }
         }, 1000)
-    });
+    });*/
 </script>
 <div id="device_rotate"></div>
 <a href="#trailer" class="arrow_up_link"><i class="fas fa-arrow-circle-up arrow_up"></i></a>
