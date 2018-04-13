@@ -420,7 +420,7 @@ if (empty($id_ses)) {
                 <a href="">Политика конфиденциальности</a>
             </div>
             <div class="col-md-4">
-                <a href="/contact-us.php">Контакты</a>
+                <a id="contact-us">Контакты</a>
                 <p>Телефон горячей линии</p>
                 <!--<p><a href="tel:88005553535">+8 (800) 555-35-35</a></p>-->
                 <p class="copyright">&copy; 2017-2018 StarBitClub - закрытый трейдерский клуб.<br>Все права защищены.</p>
@@ -433,6 +433,34 @@ if (empty($id_ses)) {
                     <li><img src="img/yandex.png" alt=""></li>
                 </ul>
                 <p><a href="#">Пользовательское соглашение</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contactPopup" style="display: none;">
+    <div class="popup_contact">
+        <a class="close__popup">X</a>
+        <p class="desc">Если у вас возникли какие-то вопросы,<br>
+            вы всегда можете связаться с нами</p>
+        <div class="row centered">
+            <div class="col-md-3 col-xs-6 col-sm-6">
+                <a href=""><img src="img/telegram.png" class="social" alt=""></a>
+                <p class="social-text">Telegram <br>
+                    @BTCStarsSupport</p>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-6">
+                <a href=""><img src="img/skype.png" class="social" alt=""></a>
+                <p class="social-text">Skype:<br>
+                    StarBitClub Support</p>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-6">
+                <a href=""><img src="img/email.png" class="social" alt=""></a>
+                <p class="social-text">E-mail:<br>
+                    support@starbitclub.com</p>
+            </div>
+            <div class="col-md-3 col-xs-6 col-sm-6">
+                <a href=""><img src="img/phone.png" class="social" alt=""></a>
+                <p class="social-text"></p>
             </div>
         </div>
     </div>
@@ -516,6 +544,14 @@ if (empty($id_ses)) {
     </div>
 </div>
 <script>
+    $('#contact-us').click(function () {
+        $('.contactPopup').css("display", "block");
+    });
+
+    $('.close__popup').click(function () {
+        $('.contactPopup').css("display", "none");
+    });
+
     $(document).ready(function () {
         $("button#step1").click(function () {
             $("#first-step").hide("slow");
@@ -600,22 +636,6 @@ if (empty($id_ses)) {
         return false;
     });
 </script>
-<!-- Begin Verbox {literal} -->
-<script type='text/javascript'>
-    (function(d, w, m) {
-        window.supportAPIMethod = m;
-        var s = d.createElement('script');
-        s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
-        s.async = true;
-        var id = 'eb3fbf487bb730c0eaf618aa09867006';
-        s.src = '//admin.verbox.ru/support/support.js?h='+id;
-        var sc = d.getElementsByTagName('script')[0];
-        w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
-        if (sc) sc.parentNode.insertBefore(s, sc);
-        else d.documentElement.firstChild.appendChild(s);
-    })(document, window, 'Verbox');
-</script>
-<!-- {/literal} End Verbox -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117114324-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];

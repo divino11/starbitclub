@@ -72,11 +72,11 @@ require_once "db.php";
             <div class="col-md-6 logo-col">
                 <img class="img-logo" src="img/logo-header-new.png" alt="logo">
                 <p class="title">ЗАКРЫТЫЙ ТРЕЙДЕРСКИЙ КЛУБ.</p>
-                <p class="text">Хотите научиться зарабатывать на криптовалюте ?<br>
-                    Тогда мы поможем вам.
+                <p class="text">Миллионы людей сейчас зарабатывают на криптовалютных биржах. <br>
+                    Мы поможем вам стать одним из них.
                     <br><br>
-                    Мы торгуем на криптовалютном рынке - рынке,<br>
-                    который сейчас интересен каждому.</p>
+                    Вступая в наш клуб вы получаете доступ к знаниям и опыту всей нашей команды. <br>
+                    Хотите узнать больше - оставьте заявку на консультацию.</p>
                 <div class="field-btn-logo">
                     <button class="btn-logo">Бесплатная консультация</button>
                 </div>
@@ -1440,7 +1440,7 @@ require_once "db.php";
                 <script type="text/javascript">
                     VK.Widgets.Group("vk_groups", {mode: 3, width: "300"}, 156978466);
                 </script>
-            </div>
+                <iframe src="//widget.instagramm.ru/?imageW=3&imageH=2&thumbnail_size=74&type=0&typetext=cristiano&head_show=1&profile_show=1&shadow_show=1&bg=255,255,255,1&opacity=true&head_bg=46729b&subscribe_bg=ad4141&border_color=c3c3c3&head_title=" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:260px;height:313px;"></iframe>            </div>
         </div>
     </div>
 </div>
@@ -1521,7 +1521,7 @@ $query = 'SELECT * FROM `admin`';
 $result = mysqli_query($link, $query); //ответ базы запишем в переменную $result
 $user = mysqli_fetch_assoc($result); //преобразуем ответ из БД в нормальный массив PHP
 $akcia_banner = $user['akcia_banner'];
-if ($akcia_banner == 0) {
+if ($akcia_banner == 1) {
     ?>
     <div class="modal fade" id="secondModal">
         <div class="modal-akcia">
@@ -1637,22 +1637,6 @@ if ($akcia_banner == 0) {
         });
     });
 </script>
-<!-- Begin Verbox {literal} -->
-<script type='text/javascript'>
-    (function(d, w, m) {
-        window.supportAPIMethod = m;
-        var s = d.createElement('script');
-        s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
-        s.async = true;
-        var id = 'eb3fbf487bb730c0eaf618aa09867006';
-        s.src = '//admin.verbox.ru/support/support.js?h='+id;
-        var sc = d.getElementsByTagName('script')[0];
-        w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
-        if (sc) sc.parentNode.insertBefore(s, sc);
-        else d.documentElement.firstChild.appendChild(s);
-    })(document, window, 'Verbox');
-</script>
-<!-- {/literal} End Verbox -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117114324-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];

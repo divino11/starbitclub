@@ -71,27 +71,59 @@ mysqli_set_charset($link, 'utf8');
         </div>
     </div>
 </div>
-<!-- Begin Verbox {literal} -->
-<script type='text/javascript'>
-    (function(d, w, m) {
-        window.supportAPIMethod = m;
-        var s = d.createElement('script');
-        s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
-        s.async = true;
-        var id = 'eb3fbf487bb730c0eaf618aa09867006';
-        s.src = '//admin.verbox.ru/support/support.js?h='+id;
-        var sc = d.getElementsByTagName('script')[0];
-        w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
-        if (sc) sc.parentNode.insertBefore(s, sc);
-        else d.documentElement.firstChild.appendChild(s);
-    })(document, window, 'Verbox');
-</script>
-<!-- {/literal} End Verbox -->
 <script data-skip-moving="true">
     (function(w,d,u){
         var s=d.createElement('script');s.async=1;s.src=u+'?'+(Date.now()/60000|0);
         var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
     })(window,document,'https://cdn.bitrix24.ru/b6717263/crm/site_button/loader_1_e8zej7.js');
 </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117114324-1"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117114324-1');
+</script>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+            try {
+                w.yaCounter48373727 = new Ya.Metrika({
+                    id: 48373727,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
+                });
+            } catch (e) {
+            }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () {
+                n.parentNode.insertBefore(s, n);
+            };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+            f();
+        }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/48373727" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
 </body>
 </html>

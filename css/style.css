@@ -72,7 +72,7 @@ video {
 .logo .text {
     text-align: left;
     color: #fff;
-    font-size: 21px;
+    font-size: 17px;
 }
 
 .logo .btn-logo {
@@ -2475,6 +2475,10 @@ body {
     color: #9a9999;
 }
 
+.reg-img {
+    width: 80%;
+}
+
 .reg-btn {
     display: block;
     margin-bottom: 20px;
@@ -4310,3 +4314,8 @@ body {
     }
 }
 
+@media (min-width: 1200px) and (max-width: 1366px) {
+    .bg4:after {
+        right: -8px;
+    }
+}

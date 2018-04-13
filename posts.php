@@ -216,22 +216,6 @@ mysqli_set_charset($link, 'utf8');
     </div>
 </div>
 <?php require_once "template/login_popup.php"; ?>
-<!-- Begin Verbox {literal} -->
-<script type='text/javascript'>
-    (function(d, w, m) {
-        window.supportAPIMethod = m;
-        var s = d.createElement('script');
-        s.type ='text/javascript'; s.id = 'supportScript'; s.charset = 'utf-8';
-        s.async = true;
-        var id = 'eb3fbf487bb730c0eaf618aa09867006';
-        s.src = '//admin.verbox.ru/support/support.js?h='+id;
-        var sc = d.getElementsByTagName('script')[0];
-        w[m] = w[m] || function() { (w[m].q = w[m].q || []).push(arguments); };
-        if (sc) sc.parentNode.insertBefore(s, sc);
-        else d.documentElement.firstChild.appendChild(s);
-    })(document, window, 'Verbox');
-</script>
-<!-- {/literal} End Verbox -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117114324-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
