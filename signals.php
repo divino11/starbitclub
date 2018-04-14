@@ -102,7 +102,7 @@ mysqli_set_charset($link, 'utf8');
     (function(w,d,u){
         var s=d.createElement('script');s.async=1;s.src=u+'?'+(Date.now()/60000|0);
         var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-    })(window,document,'https://cdn.bitrix24.ru/b6717263/crm/site_button/loader_1_e8zej7.js');
+    })(window,document,'https://cdn.bitrix24.ru/b6766487/crm/site_button/loader_2_7nsjuk.js');
 </script>
 </body>
 </html>

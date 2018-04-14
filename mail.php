@@ -7,8 +7,8 @@ $phone = $_POST['phone'];
 define('CRM_HOST', 'starbitclub1.bitrix24.ru'); // Ваш домен CRM системы
 define('CRM_PORT', '443'); // Порт сервера CRM. Установлен по умолчанию
 define('CRM_PATH', '/crm/configs/import/lead.php'); // Путь к компоненту lead.rest
-define('CRM_LOGIN', 'testbotva3@gmail.com'); // Логин пользователя Вашей CRM по управлению лидами
-define('CRM_PASSWORD', '21wqer45'); // Пароль пользователя Вашей CRM по управлению лидами
+define('CRM_LOGIN', 'abollex@mail.ru'); // Логин пользователя Вашей CRM по управлению лидами
+define('CRM_PASSWORD', 'AN9Adsa5Oc'); // Пароль пользователя Вашей CRM по управлению лидами
 
 $postData = array(
     'TITLE' => $title,

@@ -56,7 +56,7 @@ if (isset($_POST['add-post']) && $_POST['selectPost'] == 'news') {
                     $title = $_POST['title'];
                     $short_text = $_POST['short_text'];
                     $text = $_POST['text'];
-                    $select_category = $_POST['select_category'];
+                    $select_category = join(",",$_POST["select_category"]);
                     $author = $_POST['author'];
                     $file = $_FILES["myfiles"]["name"];
                     $sql = mysqli_query($link, "INSERT INTO `article` (`title`, `img`, `category`, `short_text`, `text`, `author`) 

@@ -3189,6 +3189,44 @@ body {
     bottom: 10px !important;
 }
 
+.b24-widget-button-top .b24-widget-button-social, .b24-widget-button-bottom .b24-widget-button-social {
+    max-height: 257px !important;
+    padding: 20px 50px;
+    background-color: rgba(255,255,255,0.9) !important;
+    position: relative;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    min-width: 188px;
+}
+
+.b24-widget-button-bottom .b24-widget-button-social:before {
+    content: "";
+    background-image: url(../img/bg_s2-main.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 99;
+    bottom: -30px;
+    right: 8px;
+    width: 80px;
+    transform: scale(0.5);
+    height: 40px;
+}
+
+.b24-widget-button-social-tooltip {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    opacity: 1 !important;
+    margin-left: 55px;
+    margin-top: 25px;
+    width: 100px;
+    background: transparent !important;
+}
+
+a.b24-widget-button-social-item {
+    margin-left: -35px !important;
+}
+
 @media (min-width: 1367px) and (max-width: 4000px) {
     .videoMarginFix {
         margin-top: 15%;

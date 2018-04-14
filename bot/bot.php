@@ -1,11 +1,10 @@
 <?php
 require_once "../db.php";
-require_once "functions.php";
 include('vendor/autoload.php'); //Подключаем библиотеку
 use Telegram\Bot\Api;
 use Telegram\Bot\Keyboard\Keyboard;
 
-$telegram = new Api('478008139:AAEHhCAL5Aau6whEw6FQqZGlg_t4gWFGE5E', true); //Устанавливаем токен, полученный у BotFather
+$telegram = new Api('478008139:AAExM24No151geUx1B_gtjHKxmxd8myy0p4', true); //Устанавливаем токен, полученный у BotFather
 $result = $telegram->getWebhookUpdates(); //Передаем в переменную $result полную информацию о сообщении пользователя
 
 $text = $result["message"]["text"]; //Текст сообщения
