@@ -21,7 +21,7 @@ if (isset($_POST['add-post']) && $_POST['selectPost'] == 'news') {
                     $title = $_POST['title'];
                     $short_text = $_POST['short_text'];
                     $text = $_POST['text'];
-                    $select_category = $_POST['select_category'];
+                    $select_category = join(", ",$_POST['select_category']);
                     $author = $_POST['author'];
                     $file = $_FILES["myfiles"]["name"];
                     $sql = mysqli_query($link, "INSERT INTO `news` (`title`, `img`, `category`, `short_text`, `text`, `author`) 
@@ -140,6 +140,7 @@ if (isset($_POST['add-post']) && $_POST['selectPost'] == 'news') {
                         </form>
                     </div>
                     <div class="col-md-6">
+                        <a href="addCategory" class="btn-success btn-post">Добавить категорию</a>
                         <p class="message-success"><?php echo $message_success; ?></p>
                         <p class="message-error"><?php echo $message_error; ?></p>
                     </div>

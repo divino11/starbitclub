@@ -21,7 +21,7 @@ mysqli_set_charset($link, 'utf8');
     <script src="js/jquery.scrollbar.js"></script>
     <link rel="stylesheet" href="css/jquery.scrollbar.css">
     <script>
-        jQuery(document).ready(function(){
+        jQuery(document).ready(function () {
             jQuery('body').scrollbar();
         });
     </script>
@@ -43,7 +43,7 @@ mysqli_set_charset($link, 'utf8');
             <div class="row">
                 <div class="col-md-9">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a  href="#1" data-toggle="tab">Новости</a></li>
+                        <li class="active"><a href="#1" data-toggle="tab">Новости</a></li>
                         <li><a href="#2" data-toggle="tab">Статьи</a></li>
                     </ul>
                     <div class="tab-content ">
@@ -57,7 +57,9 @@ mysqli_set_charset($link, 'utf8');
                             $img = $row['img'];
                             $date = $row['date'];
                             $short_text = $row['short_text'];
+                            $categorys = $row['category'];
                             $title = $row['title'];
+                            $categorys = explode(", ", $categorys);
                             ?>
                             <div class="col-md-12">
                                 <div class="img__main">
@@ -67,6 +69,11 @@ mysqli_set_charset($link, 'utf8');
                                                            class="title-news"><?php echo $title; ?></a></p>
                                     <p class="date-news"><?php echo date('d.m.Y H:i', strtotime($date)); ?></p>
                                     <p class="shorttext"><?php echo $short_text; ?></p>
+                                    <div class="categorys">
+                                        <?php foreach ($categorys as $category) { ?>
+                                            <span class="category"><?php echo $category; ?></span>
+                                        <?php } ?>
+                                    </div>
                                     <img src="/news-img/<?php echo $img; ?>" class="img__overlay" alt="">
                                 </div>
                             </div>
@@ -159,7 +166,7 @@ mysqli_set_charset($link, 'utf8');
                                 ?>
                                 <div class="col-md-12 hotPosts">
                                     <a href="/post?id=<?php echo $id; ?>"
-                                                           class="title__news-second"><?php echo $title; ?></a>
+                                       class="title__news-second"><?php echo $title; ?></a>
                                     <p class="date__news-second"><?php echo date('d.m.Y H:i', strtotime($date)); ?></p>
                                 </div>
                             <?php } ?>
@@ -178,7 +185,7 @@ mysqli_set_charset($link, 'utf8');
                                 ?>
                                 <div class="col-md-12 hotPosts">
                                     <a href="/post?id=<?php echo $id; ?>"
-                                                           class="title__news-second"><?php echo $title; ?></a>
+                                       class="title__news-second"><?php echo $title; ?></a>
                                     <p class="date__news-second"><?php echo date('d.m.Y H:i', strtotime($date)); ?></p>
                                 </div>
                             <?php } ?>
@@ -187,9 +194,9 @@ mysqli_set_charset($link, 'utf8');
                 </div>
 
             </div>
-            </div>
         </div>
     </div>
+</div>
 </div>
 <div class="footer-reg footer-second centered">
     <div class="container">
@@ -219,45 +226,59 @@ mysqli_set_charset($link, 'utf8');
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117114324-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
 
     gtag('config', 'UA-117114324-1');
 </script>
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script type="text/javascript">
     (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
+        (w[c] = w[c] || []).push(function () {
             try {
                 w.yaCounter48373727 = new Ya.Metrika({
-                    id:48373727,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
+                    id: 48373727,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
                 });
-            } catch(e) { }
+            } catch (e) {
+            }
         });
 
         var n = d.getElementsByTagName("script")[0],
             s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
+            f = function () {
+                n.parentNode.insertBefore(s, n);
+            };
         s.type = "text/javascript";
         s.async = true;
         s.src = "https://mc.yandex.ru/metrika/watch.js";
 
         if (w.opera == "[object Opera]") {
             d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
+        } else {
+            f();
+        }
     })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/48373727" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/48373727" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
 <!-- /Yandex.Metrika counter -->
 <script data-skip-moving="true">
-    (function(w,d,u){
-        var s=d.createElement('script');s.async=1;s.src=u+'?'+(Date.now()/60000|0);
-        var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-    })(window,document,'https://cdn.bitrix24.ru/b6766487/crm/site_button/loader_2_7nsjuk.js');
+    (function (w, d, u) {
+        var s = d.createElement('script');
+        s.async = 1;
+        s.src = u + '?' + (Date.now() / 60000 | 0);
+        var h = d.getElementsByTagName('script')[0];
+        h.parentNode.insertBefore(s, h);
+    })(window, document, 'https://cdn.bitrix24.ru/b6766487/crm/site_button/loader_2_7nsjuk.js');
 </script>
 </body>
 </html>

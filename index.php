@@ -8,7 +8,8 @@ require_once "db.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Title</title>
+    <title>Торговые сигналы криптовалют - трейдерский клуб BITCOIN STARS</title>
+    <meta name="Description" content="Доступ к закрытым источникам анализа и сигналов рынка на покупку и продажу криптовалют: точки входа, выхода, пампы. Автоматизация и формирование инвестиционного портфеля. Большая команда трейдеров и аналитиков." />
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"

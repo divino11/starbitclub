@@ -1,4 +1,4 @@
 require valid-user
 Authname "Basic Auth"
 Authtype Basic
-AuthUserFile "/home/sevents/s-events.xyz/test1/admin/.htpasswd"
+AuthUserFile "/home/gk297846/starbitclub.com/www/admin/.htpasswd"
