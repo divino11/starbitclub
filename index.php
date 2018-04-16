@@ -1676,7 +1676,7 @@ if ($akcia_banner == 1) {
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/48373727" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
-<script data-skip-moving="true">
+<script data-skip-moving="true" async>
     (function(w,d,u){
         var s=d.createElement('script');s.async=1;s.src=u+'?'+(Date.now()/60000|0);
         var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
