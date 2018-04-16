@@ -164,6 +164,10 @@ body {
     margin-top: 20px !important;
 }
 
+.chosen-container.chosen-container-single {
+    width: 120px !important;
+}
+
 /* Страница удаление новости */
 
 .admin-delete-post .col-post {

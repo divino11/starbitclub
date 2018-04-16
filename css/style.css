@@ -391,6 +391,7 @@ video {
 
 .fa-angle-down {
     animation: slideDown 1.7s infinite ease;
+    width: 20%;
 }
 
 @-webkit-keyframes slideDown {
@@ -3311,8 +3312,30 @@ a.b24-widget-button-social-item {
         margin: 20px auto;
     }
 
-    .logo .logo-col {
-        margin-left: 8%;
+    .logo .title {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .logo .text {
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .logo .btn-logo {
+        font-size: 14px;
+    }
+
+    .logo .btn-logo {
+        width: 100%;
+    }
+
+    .logo .lesson {
+        font-size: 14px;
+    }
+
+    .img100 {
+        width: 60px;
     }
 
     .logo .lesson {
@@ -3332,26 +3355,73 @@ a.b24-widget-button-social-item {
     }
 
     .profit .header h2 {
-        margin-top: 24%;
+        margin-top: 10%;
     }
 
-    .howit .col-md-3 {
-        text-align: center;
-        margin-top: 0;
-        margin-bottom: 30px;
+    .profit .header h2 {
+        font-size: 26px;
     }
 
     .logotype {
         text-align: center;
     }
 
-    .advantages .logotype img {
-        width: 185px;
-        margin-bottom: 30px;
+    .statistic .items {
+        padding-top: 20px;
+    }
+
+    .whatwedo .header h2 {
+        font-size: 26px;
+    }
+
+    .whatwedo .items .item .element {
+        width: 100%;
+    }
+
+    .desc-signal {
+        font-size: 14px;
     }
 
     .communications .items .item {
         margin-bottom: 30px;
+    }
+
+    .communications .header h2 {
+        font-size: 25px;
+    }
+
+    .communications .items .item img {
+        width: 48px;
+    }
+
+    .name {
+        font-size: 13px;
+    }
+
+    .text {
+        font-size: 11px;
+    }
+
+    .conditions .title {
+        font-size: 25px;
+    }
+
+    .conditions .text {
+        font-size: 12px;
+        word-wrap: break-word;
+    }
+
+    .accession {
+        padding-top: 50px;
+    }
+
+    .rates .description {
+        margin: 40px 0 40px 0;
+        font-size: 26px;
+    }
+
+    .rates .items .item table {
+        width: 100%;
     }
 
     .rates .items table.second {
@@ -3360,6 +3430,63 @@ a.b24-widget-button-social-item {
 
     .rates .items .item:last-child {
         margin-top: 60px;
+    }
+
+    .parthners .header h2 {
+        padding: 0px 0px 40px 0px;
+        font-size: 26px;
+    }
+
+    .parthners .items .item img {
+        width: 130%;
+    }
+
+    .footer-ready .title {
+        font-size: 14px;
+    }
+
+    .footer-ready .desc {
+        font-size: 10px;
+    }
+
+    .footer-ready .field-ready {
+        width: 100%;
+    }
+
+    .sendFormReady {
+        width: 100%;
+        padding: 1px;
+    }
+
+    .reg-ready {
+        width: 100%;
+        margin-top: 65px;
+    }
+
+    .btcstar {
+        margin: auto;
+        display: block;
+    }
+
+    .footer-reg a, .footer-reg p {
+        font-size: 13px;
+    }
+
+    .footer-reg .copyright {
+        text-align: center !important;
+        margin-top: 0 !important;
+    }
+
+    .col-money li:nth-child(3) {
+        margin-left: 0;
+    }
+
+    .logo-footer {
+        width: 60%;
+    }
+
+    .text-bg12 {
+        font-size: 14px;
     }
 
     .title-bg1 {
@@ -3922,7 +4049,7 @@ a.b24-widget-button-social-item {
     }
 }
 
-@media (max-width: 480px) and (orientation: portrait) {
+@media (max-width: 480px) {
     body {
         margin: 0 !important;
     }
@@ -3977,14 +4104,10 @@ a.b24-widget-button-social-item {
     }
 }
 
-@media (max-width: 666px) {
-    .container {
+@media (max-width: 480px) {
+    /*.container {
         width: 555px;
-    }
-
-    .logo .btn-logo {
-        font-size: 18px;
-    }
+    }*/
 
     .advantages .items .item {
         margin-left: 10px;

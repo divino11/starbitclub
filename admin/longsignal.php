@@ -52,7 +52,7 @@ if (isset($_POST['sendLongSignal'])) {
         </div>
     </div>
 </div>
-<script type="text/javascript" src="../editor/ckeditor.js"></script>
+<script type="text/javascript" src="editor/ckeditor.js"></script>
 <script type="text/javascript">
     CKEDITOR.replace('longsignal');
 </script>

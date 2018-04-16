@@ -7,9 +7,10 @@ require_once "db.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
     <title>Торговые сигналы криптовалют - трейдерский клуб BITCOIN STARS</title>
-    <meta name="Description" content="Доступ к закрытым источникам анализа и сигналов рынка на покупку и продажу криптовалют: точки входа, выхода, пампы. Автоматизация и формирование инвестиционного портфеля. Большая команда трейдеров и аналитиков." />
+    <meta name="Description"
+          content="Доступ к закрытым источникам анализа и сигналов рынка на покупку и продажу криптовалют: точки входа, выхода, пампы. Автоматизация и формирование инвестиционного портфеля. Большая команда трейдеров и аналитиков."/>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
@@ -24,7 +25,8 @@ require_once "db.php";
     <script src="js/fontawesome-all.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/script.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+          integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/line.css">
     <script>
@@ -71,7 +73,7 @@ require_once "db.php";
         </div>
         <div class="row" style="position:relative;">
             <!--<p class="hotline">Телефон горячей линии<br>+8(800) 555-35-55</p>-->
-            <div class="col-md-6 logo-col">
+            <div class="col-md-6 col-xs-12 logo-col">
                 <img class="img-logo" src="img/logo-header-new.png" alt="logo">
                 <p class="title">ЗАКРЫТЫЙ ТРЕЙДЕРСКИЙ КЛУБ.</p>
                 <p class="text">Миллионы людей сейчас зарабатывают на криптовалютных биржах. <br>
@@ -83,30 +85,30 @@ require_once "db.php";
                     <button class="btn-logo">Бесплатная консультация</button>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="col-md-4">
+            <div class="col-md-6 col-xs-12">
+                <div class="col-md-4 col-xs-4 col-sm-4">
                     <p class="lesson">Обучаем</p>
                     <img src="img/header1.png" class="img100" alt="book">
-                    <p class="description1">
+                    <p class="description1 hidden-xs hidden-sm">
                         Обучим вас
                         торговать на бирже
                         криптовалют
                     </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-4 col-sm-4">
                     <p class="lesson">Анализируем</p>
                     <img src="img/header2.png" class="img100" alt="graph">
-                    <p class="description2">
+                    <p class="description2 hidden-xs hidden-sm">
                         Проанализируем
                         рынок:
                         что стоит покупать,
                         а что - продавать.
                     </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-xs-4 col-sm-4">
                     <p class="lesson">Информируем</p>
                     <img src="img/header3.png" class="img100" alt="news">
-                    <p class="description3">
+                    <p class="description3 hidden-xs hidden-sm">
                         Расскажем вам
                         о событиях на
                         рынке
@@ -119,7 +121,7 @@ require_once "db.php";
                 <div class="arrow-angle-fa">
                     <p class="text-arrow">Узнать больше<br>
                         о StarBitClub</p>
-                    <a class="scroll" href="#aboutBS"><i class="fas fa-angle-down" style="margin-top: 25px;"></i></a>
+                    <a class="scroll" href="#aboutBS"><img src="img/new-arrow-bottom.png" class="fa-angle-down" style="margin-top: 33px;"></a>
                 </div>
             </div>
             <div class="col-md-6 col-xs-6 col-sm-6 col-arrow">
@@ -127,7 +129,7 @@ require_once "db.php";
                     <p class="text-arrow">Узнать больше<br>
                         о криптовалютном<br>
                         рынке</p>
-                    <a class="scroll" href="#aboutCrypto"><i class="fas fa-angle-down"></i></a>
+                    <a class="scroll" href="#aboutCrypto"><img src="img/new-arrow-right.png" class="fa-angle-down"></a>
                 </div>
             </div>
         </div>
@@ -165,8 +167,10 @@ require_once "db.php";
                     </ul>
                 </div>
                 <div class="col-md-2">
-                    <a href="https://www.instagram.com/bitcoin_stars/"><img class="social-menu" src="img/insta.png" alt="instagram"></a>
-                    <a href="https://www.youtube.com/channel/UCPx7Yj8ra7FKTwEmG5SNiRw?view_as=subscriber"><img class="social-menu" src="img/yt.png" alt="youtube"></a>
+                    <a href="https://www.instagram.com/bitcoin_stars/"><img class="social-menu" src="img/insta.png"
+                                                                            alt="instagram"></a>
+                    <a href="https://www.youtube.com/channel/UCPx7Yj8ra7FKTwEmG5SNiRw?view_as=subscriber"><img
+                                class="social-menu" src="img/yt.png" alt="youtube"></a>
                     <a href="https://vk.com/bitcoinstars"><img class="social-menu" src="img/vk.png" alt="vk"></a>
                 </div>
             </div>
@@ -225,7 +229,7 @@ require_once "db.php";
             <h2>Что мы делаем?</h2>
         </div>
         <div class="description centered">
-            <p class="line line1">Исследуем и анализируем различные источники информации, торгуем на криптовалютных
+            <p class="line line1 hidden-xs hidden-sm">Исследуем и анализируем различные источники информации, торгуем на криптовалютных
                 биржах, <span class="red">бесплатно обучаем
                 азам криптотрейдинга,</span> предоставляем доступ к закрытым источникам анализа и сигналам рынка.</p>
         </div>
@@ -288,7 +292,7 @@ require_once "db.php";
             <div class="header fadeInUpBig wow" data-wow-delay="0.5s" data-wow-duration="2s">
                 <h2>Прибыль от наших сигналов.</h2>
             </div>
-            <div class="description item fadeInUpBig wow" data-wow-delay="0.5s">
+            <div class="description item fadeInUpBig wow hidden-xs hidden-sm" data-wow-delay="0.5s">
                 Мы хотим дать возможность зарабатывать максимально безопасно.
                 <br>
                 Именно поэтому мы даём только <span class="red">максимально эффективные сигналы,</span>
@@ -336,7 +340,7 @@ require_once "db.php";
         </div>
     </div>
 </div>
-<div class="howit">
+<div class="howit hidden-xs hidden-sm">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -430,7 +434,7 @@ require_once "db.php";
         </div>
     </div>
 </div>
-<div class="advantages">
+<div class="advantages hidden-xs hidden-sm">
     <div class="container">
         <div class="header">
             <h2>Преимущества членства в клубе.</h2>
@@ -459,7 +463,8 @@ require_once "db.php";
             <div class="item fadeInRightBig wow" data-wow-delay="0.5s" data-wow-duration="1.5s">
                 <div class="icon"><img src="img/advantages-item.png" alt=""></div>
                 <div class="description">
-                    <span class="red">В-третьих:</span> Мы индивидуально консультируем <span class="red">каждого члена</span> нашего клуба и,
+                    <span class="red">В-третьих:</span> Мы индивидуально консультируем <span
+                            class="red">каждого члена</span> нашего клуба и,
                     при необходимости, <span class="red">обучаем бесплатно</span> торговле на бирже, составляем
                     инвестиционный портфель, даем рекомендации.
 
@@ -469,14 +474,16 @@ require_once "db.php";
                 <div class="icon"><img src="img/advantages-item.png" alt=""></div>
                 <div class="description">
                     <span class="red">В-четвёртых:</span> Своевременно даём рекомендации (сигналы) по точке входа,
-                    и цели на выход. <span class="red">Используя</span> наши <span class="red">сигналы,</span> вы максимально <span class="red">безопасно
+                    и цели на выход. <span class="red">Используя</span> наши <span class="red">сигналы,</span> вы
+                    максимально <span class="red">безопасно
                         торгуете</span> на бирже и <span class="red">минимизируете свои риски.</span>
                 </div>
             </div>
             <div class="item fadeInRightBig wow" data-wow-delay="0.5s" data-wow-duration="1.5s">
                 <div class="icon"><img src="img/advantages-item.png" alt=""></div>
                 <div class="description">
-                    <span class="red">В-пятых:</span> <span class="red">Одними из первых вы узнаёте о новостях на рынке</span> и еженедельно
+                    <span class="red">В-пятых:</span> <span
+                            class="red">Одними из первых вы узнаёте о новостях на рынке</span> и еженедельно
                     получаете развернутый <span class="red">технический анализ</span> различных криптовалют.
                 </div>
             </div>
@@ -493,7 +500,8 @@ require_once "db.php";
                 <div class="icon"><img src="img/advantages-item.png" alt=""></div>
                 <div class="description">
                     <span class="red">В-седьмых:</span>Торговля с использованием сигналов <span class="red">занимает мало времени,
-                        и доступна с мобильных устройств.</span> Вы можете <span class="red">создать</span> дополнительный
+                        и доступна с мобильных устройств.</span> Вы можете <span class="red">создать</span>
+                    дополнительный
                     <span class="red">доход</span> на криптовалютах не прилагая больших усилий и <span class="red">не беспокоясь о своих
                         инвестициях.</span>
                 </div>
@@ -528,9 +536,9 @@ require_once "db.php";
             <h2>ВСЕГДА НА СВЯЗИ!</h2>
         </div>
         <div class="description clearfix">
-            <div class="telegram">Мы всегда на связи и используем один из самых удобных мессенджеров - <span
+            <div class="telegram hidden-xs hidden-sm">Мы всегда на связи и используем один из самых удобных мессенджеров - <span
                         class="red">Telegram</span></div>
-            <div class="chat">Если у вас возникли какие-то вопросы, вы можете связаться с нами с помощью <span
+            <div class="chat hidden-xs hidden-sm">Если у вас возникли какие-то вопросы, вы можете связаться с нами с помощью <span
                         class="red">Skype</span> или по <span class="red">горячей линии</span>.
             </div>
             <div class="items col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3">
@@ -546,8 +554,8 @@ require_once "db.php";
                 </div>
                 <div class="item col-md-4 col-lg-4 col-xs-4 col-sm-4 fadeInUpBig wow" data-wow-delay="0.9s">
                     <div class="icon"><a href="#"><img src="img/on-connect-3.png" alt=""></a></div>
-                    <div class="name">Online chat</div>
-                    <div class="text">или здесь - на сайте!</div>
+                    <div class="name">Телефон горячей линии</div>
+                    <div class="text">+8(800) 555-35-55</div>
                 </div>
             </div>
         </div>
@@ -563,9 +571,11 @@ require_once "db.php";
                     <div class="circle1 wow"></div>
                 </div>
                 <img src="img/cap.png" alt="" class="conditions-icons">
-                <p class="text">Зарегистрироваться на
+                <p class="text hidden-xs hidden-sm">Зарегистрироваться на
                     нашем сайте и пройти
                     <span class="red">бесплатное обучение.</span><span class="red">*</span></p>
+                <p class="text hidden-md hidden-lg">Зарегистрироваться на
+                    нашем сайте</p>
             </div>
             <div class="col-md-1 col-xs-1 col-sm-1 wow fadeInLeft" data-wow-delay="0.8s">
                 <img src="img/conditions-arrow.png" alt="" class="conditions-arrow">
@@ -577,10 +587,11 @@ require_once "db.php";
                     <div class="circle3 wow"></div>
                 </div>
                 <img src="img/money.png" alt="" class="conditions-icons">
-                <p class="text">Выбрать тариф который
+                <p class="text hidden-xs hidden-sm">Выбрать тариф который
                     отвечает вашим запросам и
                     <span class="red">внести членский взнос.</span>
                 </p>
+                <p class="text hidden-md hidden-lg">Выбрать тариф</p>
             </div>
             <div class="col-md-1 col-xs-1 col-sm-1 wow fadeInLeft" data-wow-delay="1.4s">
                 <img src="img/conditions-arrow.png" alt="" class="conditions-arrow">
@@ -593,15 +604,17 @@ require_once "db.php";
                     <div class="circle6 wow"></div>
                 </div>
                 <img src="img/robot-bot.png" alt="" class="conditions-icons">
-                <p class="text">Подключить нашего
+                <p class="text hidden-xs hidden-sm">Подключить нашего
                     <span class="red">telegram-помощника,</span>
                     который обладает полным
                     пакетом инструментов
                     <span class="red">для успешной торговли
                         на бирже.</span></p>
+                <p class="text hidden-md hidden-lg">Подключить нашего
+                    telegram-помощника</p>
             </div>
         </div>
-        <p class="cond-footer wow fadeIn" data-wow-delay="1s"><span class="red">*</span> - Данная часть пункта не
+        <p class="cond-footer wow fadeIn hidden-xs hidden-sm" data-wow-delay="1s"><span class="red">*</span> - Данная часть пункта не
             обязательна трейдерам, имеющим
             базовые навыки торговли на бирже криптовалют</p>
     </div>
@@ -613,7 +626,7 @@ require_once "db.php";
                 <source src="img/cloud-loop.mp4">
             </video>
         </div>
-        <div class="header fadeInUpBig wow">
+        <div class="header fadeInUpBig wow hidden-xs hidden-sm">
             <h2>Желаете присоединиться к закрытому трейдерскому клубу?</h2>
         </div>
         <div class="description fadeInUpBig wow"><span class="red">Вступай в наш клуб, зарабатывай с нами!</span></div>
@@ -762,623 +775,641 @@ require_once "db.php";
             <h2>Партнёры.</h2>
         </div>
         <div class="items col-md-12 col-lg-12">
-            <div class="item col-md-4 col-lg-4 fadeInUpBig wow" data-wow-delay="0.5s">
+            <div class="item col-md-4 col-lg-4 col-xs-4 col-sm-4 fadeInUpBig wow" data-wow-delay="0.5s">
                 <a href="#"><img src="img/bihance1.png" alt=""></a>
             </div>
-            <div class="item col-md-4 col-lg-4 fadeInUpBig wow" data-wow-delay="0.8s">
+            <div class="item col-md-4 col-lg-4 col-xs-4 col-sm-4 fadeInUpBig wow" data-wow-delay="0.8s">
                 <a href="#"><img src="img/partners-best.png" alt=""></a>
             </div>
-            <div class="item col-md-4 col-lg-4 fadeInUpBig wow" data-wow-delay="1.1s">
+            <div class="item col-md-4 col-lg-4 col-xs-4 col-sm-4 fadeInUpBig wow" data-wow-delay="1.1s">
                 <a href="#"><img src="img/partners-exmo.png" alt=""></a>
             </div>
         </div>
     </div>
 </div>
-<div class="row1">
-    <div class="container">
-        <div class="row what-is-crypto">
-            <div class="col-md-3 col-xs-3 col-sm-3">
-                <img class="first" src="img/first.png" alt="first">
-                <!--<p class="main-number wow fadeIn" data-wow-duration="4s">1</p>
-                <div class="ripples wow">
-                    <div class="ripple ripple-1 wow"></div>
-                    <div class="ripple1 ripple-2 wow"></div>
-                    <div class="ripple2 ripple-3 wow"></div>
-                </div>-->
+<div class="desktop hidden-xs hidden-sm">
+    <div class="row1">
+        <div class="container">
+            <div class="row what-is-crypto">
+                <div class="col-md-3 col-xs-3 col-sm-3">
+                    <img class="first" src="img/first.png" alt="first">
+                    <!--<p class="main-number wow fadeIn" data-wow-duration="4s">1</p>
+                    <div class="ripples wow">
+                        <div class="ripple ripple-1 wow"></div>
+                        <div class="ripple1 ripple-2 wow"></div>
+                        <div class="ripple2 ripple-3 wow"></div>
+                    </div>-->
+                </div>
+                <div class="col-md-9 col-xs-9 col-sm-9">
+                    <h1 class="title-bg1" id="aboutCrypto">Что такое криптовалюта?</h1>
+                </div>
             </div>
-            <div class="col-md-9 col-xs-9 col-sm-9">
-                <h1 class="title-bg1" id="aboutCrypto">Что такое криптовалюта?</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 col-xs-3 col-sm-3">
-                <img class="img100 btc fadeInLeft wow" data-wow-delay="0.5s" data-wow-duration="1.5s" src="img/btc.png"
-                     alt="first">
-                <span class="span_img100 wow"></span>
-            </div>
-            <div class="col-md-5 col-xs-5 col-sm-5 fadeInRight wow" data-wow-delay="0.5s" data-wow-duration="1.5s">
-                <p class="text-bg1">Это уникальное изобретение современного мира,
-                    <span class="red">разновидность</span> цифровой <span class="red">валюты,</span> способная
-                    <span class="red">приносить огромный доход.</span> Создание и контроль
-                    за которой базируются на криптографических методах.
-                    Особенностью критовалют является <span class="red">отсутствие</span>
-                    какого-либо <span class="red">контролирующего органа.</span></p>
-            </div>
-            <div class="col-md-5 col-xs-5 col-sm-5">
+            <div class="row">
+                <div class="col-md-3 col-xs-3 col-sm-3">
+                    <img class="img100 btc fadeInLeft wow" data-wow-delay="0.5s" data-wow-duration="1.5s"
+                         src="img/btc.png"
+                         alt="first">
+                    <span class="span_img100 wow"></span>
+                </div>
+                <div class="col-md-5 col-xs-5 col-sm-5 fadeInRight wow" data-wow-delay="0.5s" data-wow-duration="1.5s">
+                    <p class="text-bg1">Это уникальное изобретение современного мира,
+                        <span class="red">разновидность</span> цифровой <span class="red">валюты,</span> способная
+                        <span class="red">приносить огромный доход.</span> Создание и контроль
+                        за которой базируются на криптографических методах.
+                        Особенностью критовалют является <span class="red">отсутствие</span>
+                        какого-либо <span class="red">контролирующего органа.</span></p>
+                </div>
+                <div class="col-md-5 col-xs-5 col-sm-5">
 
+                </div>
             </div>
-        </div>
-        <div class="row blockchein-row">
-            <div class="col-md-3 col-xs-3 col-sm-3">
-                <img class="img100 blockchein fadeInLeft wow" data-wow-delay="0.5s" data-wow-duration="1.5s"
-                     src="img/link.png" alt="first">
-                <span class="span2_img100 wow"></span>
-            </div>
-            <div class="col-md-5 col-xs-5 col-sm-5 fadeInRight wow" data-wow-delay="0.5s" data-wow-duration="1.5s">
-                <p class="text-bg1">Функционирование данной системы основано
-                    на технологии <span class="red">blockchain.</span> Это выстроенная по
-                    определённым правилам непрерывная
-                    <span class="red">последовательная цепочка блоков,</span> содержащих
-                    информацию. Блокчейн как вечный цифровой
-                    распределённый <span class="red">журнал</span> экономических <span class="red">транзакций,</span>
-                    который может быть запрограммирован для записи
-                    <span class="red">не только финансовых операций, но</span> и практически
-                    <span class="red">всего, что имеет ценность.</span></p>
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4 planet">
-                <img src="img/planet-btc.png" alt="planet">
+            <div class="row blockchein-row">
+                <div class="col-md-3 col-xs-3 col-sm-3">
+                    <img class="img100 blockchein fadeInLeft wow" data-wow-delay="0.5s" data-wow-duration="1.5s"
+                         src="img/link.png" alt="first">
+                    <span class="span2_img100 wow"></span>
+                </div>
+                <div class="col-md-5 col-xs-5 col-sm-5 fadeInRight wow" data-wow-delay="0.5s" data-wow-duration="1.5s">
+                    <p class="text-bg1">Функционирование данной системы основано
+                        на технологии <span class="red">blockchain.</span> Это выстроенная по
+                        определённым правилам непрерывная
+                        <span class="red">последовательная цепочка блоков,</span> содержащих
+                        информацию. Блокчейн как вечный цифровой
+                        распределённый <span class="red">журнал</span> экономических <span
+                                class="red">транзакций,</span>
+                        который может быть запрограммирован для записи
+                        <span class="red">не только финансовых операций, но</span> и практически
+                        <span class="red">всего, что имеет ценность.</span></p>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4 planet">
+                    <img src="img/planet-btc.png" alt="planet">
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="row2">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 two">
-                <img src="img/two.png" alt="two">
-                <!--<p class="main-number wow fadeIn" data-wow-duration="3s">2</p>
-                <div class="ripples wow">
-                    <div class="ripple ripple-1"></div>
-                    <div class="ripple1 ripple-2"></div>
-                    <div class="ripple2 ripple-3"></div>
-                </div>-->
-                <span class="span_two_img100"></span>
+    <div class="row2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 two">
+                    <img src="img/two.png" alt="two">
+                    <!--<p class="main-number wow fadeIn" data-wow-duration="3s">2</p>
+                    <div class="ripples wow">
+                        <div class="ripple ripple-1"></div>
+                        <div class="ripple1 ripple-2"></div>
+                        <div class="ripple2 ripple-3"></div>
+                    </div>-->
+                    <span class="span_two_img100"></span>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 col-xs-12 col-sm-12">
-                <p class="facts-crypto">Факты о Криптовалютах</p>
+            <div class="row">
+                <div class="col-md-12 col-xs-12 col-sm-12">
+                    <p class="facts-crypto">Факты о Криптовалютах</p>
+                </div>
             </div>
-        </div>
-        <div class="row bg2-row">
-            <div class="col-md-2 col-xs-2 col-sm-2 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s">
-                <img class="img100" src="img/btc.png" alt="">
-                <span class="arrow_left"></span>
-                <span class="arrow_left_to_bot"></span>
+            <div class="row bg2-row">
+                <div class="col-md-2 col-xs-2 col-sm-2 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s">
+                    <img class="img100" src="img/btc.png" alt="">
+                    <span class="arrow_left"></span>
+                    <span class="arrow_left_to_bot"></span>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s">
+                    <p class="text-bg2">Первой криптовалютой, появившейся в 2008-м году был <span
+                                class="red">Bitcoin</span>
+                    </p>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="1.5s">
+                    <p class="text-bg2"><span class="red">69% мировых банков</span> собираются внедрить
+                        технологию Blockchain в свою деятельность.</p>
+                </div>
+                <div class="col-md-2 col-xs-2 col-sm-2 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="1.5s">
+                    <img class="img100" src="img/1.png" alt="">
+                    <span class="arrow_right"></span>
+                    <span class="arrow_right_to_bot"></span>
+                </div>
             </div>
-            <div class="col-md-4 col-xs-4 col-sm-4 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s">
-                <p class="text-bg2">Первой криптовалютой, появившейся в 2008-м году был <span class="red">Bitcoin</span>
-                </p>
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="1.5s">
-                <p class="text-bg2"><span class="red">69% мировых банков</span> собираются внедрить
-                    технологию Blockchain в свою деятельность.</p>
-            </div>
-            <div class="col-md-2 col-xs-2 col-sm-2 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="1.5s">
-                <img class="img100" src="img/1.png" alt="">
-                <span class="arrow_right"></span>
-                <span class="arrow_right_to_bot"></span>
-            </div>
-        </div>
-        <div class="row bg2-row">
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <img class="img100 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s" src="img/2L.png" alt="">
-                <span class="line_top wow"></span>
+            <div class="row bg2-row">
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <img class="img100 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s" src="img/2L.png"
+                         alt="">
+                    <span class="line_top wow"></span>
 
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <p class="text-bg2 wow fadeInLeft" data-wow-delay="2s" data-wow-duration="1.5s">На сегодняшний день
-                    доподлинно неизвестно,
-                    кто создал Bitcoin.Считается, что это был японский
-                    программист <span class="red">Сатоши Накамото.</span></p>
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <p class="text-bg2 wow fadeInRight" data-wow-delay="2.5s" data-wow-duration="1.5s"><span class="red">15% мирового запаса</span>
-                    Bitcoin принадлежит ФБР.</p>
-            </div>
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <img class="img100 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="1.5s" src="img/2.png"
-                     alt="">
-                <span class="line_top wow"></span>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4">
+                    <p class="text-bg2 wow fadeInLeft" data-wow-delay="2s" data-wow-duration="1.5s">На сегодняшний день
+                        доподлинно неизвестно,
+                        кто создал Bitcoin.Считается, что это был японский
+                        программист <span class="red">Сатоши Накамото.</span></p>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4">
+                    <p class="text-bg2 wow fadeInRight" data-wow-delay="2.5s" data-wow-duration="1.5s"><span
+                                class="red">15% мирового запаса</span>
+                        Bitcoin принадлежит ФБР.</p>
+                </div>
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <img class="img100 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="1.5s" src="img/2.png"
+                         alt="">
+                    <span class="line_top wow"></span>
 
+                </div>
             </div>
-        </div>
-        <div class="row bg2-row">
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <img class="img100 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s" src="img/3L.png" alt="">
-                <span class="line_top line_top1024 wow"></span>
+            <div class="row bg2-row">
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <img class="img100 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s" src="img/3L.png"
+                         alt="">
+                    <span class="line_top line_top1024 wow"></span>
 
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <p class="text-bg2 wow fadeInLeft" data-wow-delay="2s" data-wow-duration="1.5s">В <span class="red">2010-м году</span>
-                    Bitcoin, стоил <span
-                            class="red">$ 0.5 за 1 BTC,</span> а в
-                    <span class="red">2017-м году</span> стоимость <span class="red">1 BTC доходила до 20000$!</span>
-                </p>
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <p class="text-bg2 wow fadeInRight" data-wow-delay="2.5s" data-wow-duration="1.5s">Университет в
-                    Никосии, на Кипре, <span class="red">стал первым в
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4">
+                    <p class="text-bg2 wow fadeInLeft" data-wow-delay="2s" data-wow-duration="1.5s">В <span class="red">2010-м году</span>
+                        Bitcoin, стоил <span
+                                class="red">$ 0.5 за 1 BTC,</span> а в
+                        <span class="red">2017-м году</span> стоимость <span
+                                class="red">1 BTC доходила до 20000$!</span>
+                    </p>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4">
+                    <p class="text-bg2 wow fadeInRight" data-wow-delay="2.5s" data-wow-duration="1.5s">Университет в
+                        Никосии, на Кипре, <span class="red">стал первым в
                     мире учебным заведением</span>, которое принимает в
-                    качестве оплаты криптовалюту.</p>
-            </div>
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <img class="img100 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="1.5s" src="img/3.png"
-                     alt="">
-                <span class="line_top line_top1024 wow"></span>
+                        качестве оплаты криптовалюту.</p>
+                </div>
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <img class="img100 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="1.5s" src="img/3.png"
+                         alt="">
+                    <span class="line_top line_top1024 wow"></span>
 
+                </div>
             </div>
-        </div>
-        <div class="row bg2-row">
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <img class="img100 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s" src="img/4L.png" alt="">
-                <span class="line_top line_top1024_1 wow"></span>
+            <div class="row bg2-row">
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <img class="img100 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s" src="img/4L.png"
+                         alt="">
+                    <span class="line_top line_top1024_1 wow"></span>
 
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <p class="text-bg2 wow fadeInLeft" data-wow-delay="2s" data-wow-duration="1.5s">На данный момент
-                    существует <span class="red">более 2000
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4">
+                    <p class="text-bg2 wow fadeInLeft" data-wow-delay="2s" data-wow-duration="1.5s">На данный момент
+                        существует <span class="red">более 2000
                 различных криптовалют.</span></p>
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <p class="text-bg2 wow fadeInRight" data-wow-delay="2.5s" data-wow-duration="1.5s">Мощность сети Bitcoin
-                    превышает <span class="red">500 первых
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4">
+                    <p class="text-bg2 wow fadeInRight" data-wow-delay="2.5s" data-wow-duration="1.5s">Мощность сети
+                        Bitcoin
+                        превышает <span class="red">500 первых
                 суперкомпьютеров.</span></p>
-            </div>
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <img class="img100 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="1.5s" src="img/4.png"
-                     alt="">
-                <span class="line_top line_top1024_1 wow"></span>
+                </div>
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <img class="img100 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="1.5s" src="img/4.png"
+                         alt="">
+                    <span class="line_top line_top1024_1 wow"></span>
 
+                </div>
             </div>
-        </div>
-        <div class="row bg2-row">
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <img class="img100 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s" src="img/5L.png" alt="">
-                <span class="line_top line_top1024_3 wow"></span>
+            <div class="row bg2-row">
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <img class="img100 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s" src="img/5L.png"
+                         alt="">
+                    <span class="line_top line_top1024_3 wow"></span>
 
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <p class="text-bg2 wow fadeInLeft" data-wow-delay="2s" data-wow-duration="1.5s">Общая капитализация
-                    криптовалют достигала
-                    отметки свыше <span class="red">800 млрд $!</span></p>
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <p class="text-bg2 wow fadeInRight" data-wow-delay="2.5s" data-wow-duration="1.5s">Компания <span
-                            class="red">Virgin Galactik,</span> которая планирует
-                    организовавать суборбитальные космические
-                    полёты, <span class="red">принимает BTC.</span></p>
-            </div>
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <img class="img100 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="1.5s" src="img/5.png"
-                     alt="">
-                <span class="line_top line_top1024_3 wow"></span>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4">
+                    <p class="text-bg2 wow fadeInLeft" data-wow-delay="2s" data-wow-duration="1.5s">Общая капитализация
+                        криптовалют достигала
+                        отметки свыше <span class="red">800 млрд $!</span></p>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4">
+                    <p class="text-bg2 wow fadeInRight" data-wow-delay="2.5s" data-wow-duration="1.5s">Компания <span
+                                class="red">Virgin Galactik,</span> которая планирует
+                        организовавать суборбитальные космические
+                        полёты, <span class="red">принимает BTC.</span></p>
+                </div>
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <img class="img100 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="1.5s" src="img/5.png"
+                         alt="">
+                    <span class="line_top line_top1024_3 wow"></span>
 
+                </div>
             </div>
-        </div>
-        <div class="row bg2-row">
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <span class="line_bot wow"></span>
-                <img class="img100 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s" src="img/6L.png" alt="">
-                <span class="line_top line_top1024_2 wow"></span>
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <p class="text-bg2 wow fadeInLeft" data-wow-delay="2s" data-wow-duration="1.5s">Порядка 70% от общей
-                    капитализации принадлежит
-                    <span class="red">5 криптовалютам.</span></p>
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <p class="text-bg2 wow fadeInRight" data-wow-delay="2.5s" data-wow-duration="1.5s"><span class="red">21 миллион</span>
-                    - таково колличество Bitcoin,
-                    которое может быть добыто.</p>
-            </div>
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <span class="line_top line_top1024_2 wow"></span>
-                <img class="img100 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="1.5s" src="img/6.png"
-                     alt="">
-                <span class="arrow_right_bot"></span>
+            <div class="row bg2-row">
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <span class="line_bot wow"></span>
+                    <img class="img100 wow fadeInLeft" data-wow-delay="1s" data-wow-duration="1.5s" src="img/6L.png"
+                         alt="">
+                    <span class="line_top line_top1024_2 wow"></span>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4">
+                    <p class="text-bg2 wow fadeInLeft" data-wow-delay="2s" data-wow-duration="1.5s">Порядка 70% от общей
+                        капитализации принадлежит
+                        <span class="red">5 криптовалютам.</span></p>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4">
+                    <p class="text-bg2 wow fadeInRight" data-wow-delay="2.5s" data-wow-duration="1.5s"><span
+                                class="red">21 миллион</span>
+                        - таково колличество Bitcoin,
+                        которое может быть добыто.</p>
+                </div>
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <span class="line_top line_top1024_2 wow"></span>
+                    <img class="img100 wow fadeInRight" data-wow-delay="1.5s" data-wow-duration="1.5s" src="img/6.png"
+                         alt="">
+                    <span class="arrow_right_bot"></span>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="row3">
-    <div class="container">
-        <div class="row bg3">
-            <div class="col-md-2 col-xs-2 col-sm-2 two">
-                <img src="img/three.png" alt="three">
-                <!--<p class="main-number1 wow fadeIn" data-wow-duration="3s">3</p>
-                <div class="ripples wow">
-                    <div class="analytic-ripple1 ripple-1 wow"></div>
-                    <div class="analytic-ripple2 ripple-2 wow"></div>
-                    <div class="analytic-ripple3 ripple-3 wow"></div>
-                </div>-->
+    <div class="row3">
+        <div class="container">
+            <div class="row bg3">
+                <div class="col-md-2 col-xs-2 col-sm-2 two">
+                    <img src="img/three.png" alt="three">
+                    <!--<p class="main-number1 wow fadeIn" data-wow-duration="3s">3</p>
+                    <div class="ripples wow">
+                        <div class="analytic-ripple1 ripple-1 wow"></div>
+                        <div class="analytic-ripple2 ripple-2 wow"></div>
+                        <div class="analytic-ripple3 ripple-3 wow"></div>
+                    </div>-->
+                </div>
+                <div class="col-md-10 col-xs-10 col-sm-10">
+                    <h1 class="title-bg3">Аналитика.</h1>
+                </div>
             </div>
-            <div class="col-md-10 col-xs-10 col-sm-10">
-                <h1 class="title-bg3">Аналитика.</h1>
-            </div>
-        </div>
-        <div class="row bg3-row">
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <img class="img100" src="img/analitica.png" alt="">
-                <span class="line_top"></span>
-                <span class="line_bottom wow"></span>
+            <div class="row bg3-row">
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <img class="img100" src="img/analitica.png" alt="">
+                    <span class="line_top"></span>
+                    <span class="line_bottom wow"></span>
 
+                </div>
+                <div class="col-md-5 col-xs-5 col-sm-5 wow fadeInLeft">
+                    <p class="text-bg3">Цифровые активы продолжают опережать традиционные
+                        по доходности. Те, кто успел купить криптовалюты еще в
+                        начале года, <span class="red">могли увеличить вложения почти в семь раз.</span></p>
+                </div>
+                <div class="col-md-5 col-xs-5 col-sm-5 diagram-row wow fadeInRight">
+                    <p class="text-diagram">Доходность цифровых и традиционных
+                        активов с начала 2017 года</p>
+                    <img class="diagram" src="img/diagram1.jpg" alt="diagrama">
+                </div>
             </div>
-            <div class="col-md-5 col-xs-5 col-sm-5 wow fadeInLeft">
-                <p class="text-bg3">Цифровые активы продолжают опережать традиционные
-                    по доходности. Те, кто успел купить криптовалюты еще в
-                    начале года, <span class="red">могли увеличить вложения почти в семь раз.</span></p>
-            </div>
-            <div class="col-md-5 col-xs-5 col-sm-5 diagram-row wow fadeInRight">
-                <p class="text-diagram">Доходность цифровых и традиционных
-                    активов с начала 2017 года</p>
-                <img class="diagram" src="img/diagram1.jpg" alt="diagrama">
-            </div>
-        </div>
-        <div class="row bg3-row">
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <img class="img100" src="img/analitica.png" alt="">
-                <span class="line_bottom wow"></span>
-            </div>
-            <div class="col-md-5 col-xs-5 col-sm-5 wow fadeInLeft">
-                <p class="text-bg3"><span class="red">Самыми доходными</span> криптовалютами в третьем квартале
-                    <span class="red">стали</span> вовсе не биткоин или эфир, а <span class="red">малоизвестные
+            <div class="row bg3-row">
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <img class="img100" src="img/analitica.png" alt="">
+                    <span class="line_bottom wow"></span>
+                </div>
+                <div class="col-md-5 col-xs-5 col-sm-5 wow fadeInLeft">
+                    <p class="text-bg3"><span class="red">Самыми доходными</span> криптовалютами в третьем квартале
+                        <span class="red">стали</span> вовсе не биткоин или эфир, а <span class="red">малоизвестные
                         альткоины:</span> AdEx, Rise, Triggers, NoLimitCoin, Pura.</p>
+                </div>
+                <div class="col-md-5 col-xs-5 col-sm-5 diagram-row wow fadeInRight">
+                    <p class="text-diagram">Самые доходные криптовалюты
+                        по итогам III квартала 2017 года</p>
+                    <img class="diagram" src="img/diagram2.jpg" alt="diagrama">
+                </div>
             </div>
-            <div class="col-md-5 col-xs-5 col-sm-5 diagram-row wow fadeInRight">
-                <p class="text-diagram">Самые доходные криптовалюты
-                    по итогам III квартала 2017 года</p>
-                <img class="diagram" src="img/diagram2.jpg" alt="diagrama">
-            </div>
-        </div>
-        <div class="row bg3-row">
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <img class="img100" src="img/analitica.png" alt="">
-                <span class="line_bottom wow"></span>
+            <div class="row bg3-row">
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <img class="img100" src="img/analitica.png" alt="">
+                    <span class="line_bottom wow"></span>
 
+                </div>
+                <div class="col-md-5 col-xs-5 col-sm-5 wow fadeInLeft">
+                    <p class="text-bg3">Рост криптовалют с начала 2017 года впечатляет.
+                        В среднем <span class="red">он составил 3000%!</span></p>
+                </div>
+                <div class="col-md-5 col-xs-5 col-sm-5 diagram-row wow fadeInRight">
+                    <p class="text-diagram">Рост криптовалют с начала 2017 года </p>
+                    <img class="diagram" src="img/diagram3.jpg" alt="diagrama">
+                </div>
             </div>
-            <div class="col-md-5 col-xs-5 col-sm-5 wow fadeInLeft">
-                <p class="text-bg3">Рост криптовалют с начала 2017 года впечатляет.
-                    В среднем <span class="red">он составил 3000%!</span></p>
-            </div>
-            <div class="col-md-5 col-xs-5 col-sm-5 diagram-row wow fadeInRight">
-                <p class="text-diagram">Рост криптовалют с начала 2017 года </p>
-                <img class="diagram" src="img/diagram3.jpg" alt="diagrama">
-            </div>
-        </div>
-        <div class="row bg3-row">
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <img class="img100" src="img/analitica.png" alt="">
-                <span class="line_bottom wow"></span>
-            </div>
-            <div class="col-md-5 col-xs-5 col-sm-5 wow fadeInLeft">
-                <p class="text-bg3">По мере того, как увеличивается стоимость криптовалют,
-                    растет и их популярность. Все больше пользователей
-                    <span class="red">обращаются к Google,</span> чтобы <span class="red">узнать,</span> что такое <span
-                            class="red">bitcoin,
+            <div class="row bg3-row">
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <img class="img100" src="img/analitica.png" alt="">
+                    <span class="line_bottom wow"></span>
+                </div>
+                <div class="col-md-5 col-xs-5 col-sm-5 wow fadeInLeft">
+                    <p class="text-bg3">По мере того, как увеличивается стоимость криптовалют,
+                        растет и их популярность. Все больше пользователей
+                        <span class="red">обращаются к Google,</span> чтобы <span class="red">узнать,</span> что такое
+                        <span
+                                class="red">bitcoin,
                         ethereum, blockchain</span> и так далее.</p>
-            </div>
-            <div class="col-md-5 col-xs-5 col-sm-5 diagram-row wow fadeInRight">
-                <p class="text-diagram">Популярность поисковых запросов в Google</p>
-                <img class="diagram" src="img/diagram4.jpg" alt="diagrama">
+                </div>
+                <div class="col-md-5 col-xs-5 col-sm-5 diagram-row wow fadeInRight">
+                    <p class="text-diagram">Популярность поисковых запросов в Google</p>
+                    <img class="diagram" src="img/diagram4.jpg" alt="diagrama">
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="row4">
-    <div class="container">
-        <div class="row bg4">
-            <div class="col5">
-                <h1 class="title-bg4">СПОСОБЫ
-                    ДОБЫЧИ
-                    КРИПТОВАЛЮТ.</h1>
-                <img src="img/four.png" alt="four">
-                <!--<p class="main-number2 wow fadeIn" data-wow-duration="3s">4</p>
-                <div class="ripples wow">
-                    <div class="dobicha-ripple1 ripple-1 wow"></div>
-                    <div class="dobicha-ripple2 ripple-2 wow"></div>
-                    <div class="dobicha-ripple3 ripple-3 wow"></div>
-                </div>-->
-            </div>
-            <div class="col5-1">
-                <img src="img/dobicha-1.png" class="fadeInUp wow" data-wow-duration="1s" data-wow-delay="1s" alt="">
-                <span class="line_right"></span>
-                <p class="text-bg4">Майнинг - один из
-                    способов получение
-                    криптовалюты,
-                    основанный на
-                    использовании
-                    мощностей компьютера
-                    для решения
-                    математических задач.</p>
-            </div>
-            <div class="col5-1">
-                <img src="img/dobicha-2.png" class="fadeInUp wow" data-wow-duration="1s" data-wow-delay="1.3s" alt="">
-                <span class="line_right"></span>
-                <p class="text-bg4">Покупка криптовалют
-                    у других людей,
-                    посредством
-                    специальных сайтов
-                    или форумов.</p>
-            </div>
-            <div class="col5-1">
-                <img src="img/dobicha-3.png" class="fadeInUp wow" data-wow-duration="1s" data-wow-delay="1.6s" alt="">
-                <span class="line_right"></span>
-                <p class="text-bg4">Покупка криптовалют
-                    через сайты-обменники,
-                    или telegram-боты.</p>
-            </div>
-            <div class="col5-1">
-                <img src="img/dobicha-4.png" class="fadeInUp wow" data-wow-duration="1s" data-wow-delay="1.9s" alt="">
-                <span class="line_right"></span>
-                <span class="arrow_right"></span>
+    <div class="row4">
+        <div class="container">
+            <div class="row bg4">
+                <div class="col5">
+                    <h1 class="title-bg4">СПОСОБЫ
+                        ДОБЫЧИ
+                        КРИПТОВАЛЮТ.</h1>
+                    <img src="img/four.png" alt="four">
+                    <!--<p class="main-number2 wow fadeIn" data-wow-duration="3s">4</p>
+                    <div class="ripples wow">
+                        <div class="dobicha-ripple1 ripple-1 wow"></div>
+                        <div class="dobicha-ripple2 ripple-2 wow"></div>
+                        <div class="dobicha-ripple3 ripple-3 wow"></div>
+                    </div>-->
+                </div>
+                <div class="col5-1">
+                    <img src="img/dobicha-1.png" class="fadeInUp wow" data-wow-duration="1s" data-wow-delay="1s" alt="">
+                    <span class="line_right"></span>
+                    <p class="text-bg4">Майнинг - один из
+                        способов получение
+                        криптовалюты,
+                        основанный на
+                        использовании
+                        мощностей компьютера
+                        для решения
+                        математических задач.</p>
+                </div>
+                <div class="col5-1">
+                    <img src="img/dobicha-2.png" class="fadeInUp wow" data-wow-duration="1s" data-wow-delay="1.3s"
+                         alt="">
+                    <span class="line_right"></span>
+                    <p class="text-bg4">Покупка криптовалют
+                        у других людей,
+                        посредством
+                        специальных сайтов
+                        или форумов.</p>
+                </div>
+                <div class="col5-1">
+                    <img src="img/dobicha-3.png" class="fadeInUp wow" data-wow-duration="1s" data-wow-delay="1.6s"
+                         alt="">
+                    <span class="line_right"></span>
+                    <p class="text-bg4">Покупка криптовалют
+                        через сайты-обменники,
+                        или telegram-боты.</p>
+                </div>
+                <div class="col5-1">
+                    <img src="img/dobicha-4.png" class="fadeInUp wow" data-wow-duration="1s" data-wow-delay="1.9s"
+                         alt="">
+                    <span class="line_right"></span>
+                    <span class="arrow_right"></span>
 
-                <p class="text-bg4">Покупка криптовалют
-                    на бирже. </p>
+                    <p class="text-bg4">Покупка криптовалют
+                        на бирже. </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="row5">
-    <div class="container">
-        <div class="row bg5">
-            <div class="col-xs-12 col-md-12">
-                <table border="1" bordercolor="#d9b824" class="table-style">
-                    <tr class="row-table1">
-                        <td class="title-table">Способ добычи криптовалюты</td>
-                        <td class="title-table">Майнинг</td>
-                        <td>Покупка у других людей</td>
-                        <td>Покупка в обменниках</td>
-                        <td>Покупка на бирже</td>
-                    </tr>
-                    <tr class="row-table2">
-                        <td class="title-table">Сложность реализации</td>
-                        <td class="red-table">Высокая</td>
-                        <td class="green-table">Низкая</td>
-                        <td class="green-table">Низкая</td>
-                        <td class="green-table">Низкая</td>
-                    </tr>
-                    <tr class="row-table3">
-                        <td class="title-table">Необходимые вложения</td>
-                        <td class="red-table">От 60000 руб.</td>
-                        <td class="gray-table">От 1000 руб.</td>
-                        <td class="gray-table">От 1000 руб.</td>
-                        <td class="green-table">От 500 руб.</td>
-                    </tr>
-                    <tr class="row-table4">
-                        <td class="title-table">Сроки окупаемости</td>
-                        <td class="red-table">От полугода</td>
-                        <td class="red-table">В зависимости от курса валюты</td>
-                        <td class="red-table">В зависимости от курса валюты</td>
-                        <td class="green-table">От 1 дня</td>
-                    </tr>
-                    <tr class="row-table5">
-                        <td class="title-table">Доходность</td>
-                        <td class="gray-table">От 10%</td>
-                        <td class="red-table">В зависимости от курса валюты</td>
-                        <td class="red-table">В зависимости от курса валюты</td>
-                        <td class="green-table">От 40%</td>
-                    </tr>
-                    <tr class="row-table6">
-                        <td class="title-table">Безопасность</td>
-                        <td class="green-table">Высокая</td>
-                        <td class="red-table">Низкая</td>
-                        <td class="green-table">Высокая</td>
-                        <td class="green-table">Высокая</td>
-                    </tr>
-                    <tr class="row-table7">
-                        <td class="title-table">Стабильность дохода</td>
-                        <td class="gray-table">Средняя</td>
-                        <td class="red-table">Низкая</td>
-                        <td class="red-table">Низкая</td>
-                        <td class="green-table">Высокая</td>
-                    </tr>
-                </table>
+    <div class="row5">
+        <div class="container">
+            <div class="row bg5">
+                <div class="col-xs-12 col-md-12">
+                    <table border="1" bordercolor="#d9b824" class="table-style">
+                        <tr class="row-table1">
+                            <td class="title-table">Способ добычи криптовалюты</td>
+                            <td class="title-table">Майнинг</td>
+                            <td>Покупка у других людей</td>
+                            <td>Покупка в обменниках</td>
+                            <td>Покупка на бирже</td>
+                        </tr>
+                        <tr class="row-table2">
+                            <td class="title-table">Сложность реализации</td>
+                            <td class="red-table">Высокая</td>
+                            <td class="green-table">Низкая</td>
+                            <td class="green-table">Низкая</td>
+                            <td class="green-table">Низкая</td>
+                        </tr>
+                        <tr class="row-table3">
+                            <td class="title-table">Необходимые вложения</td>
+                            <td class="red-table">От 60000 руб.</td>
+                            <td class="gray-table">От 1000 руб.</td>
+                            <td class="gray-table">От 1000 руб.</td>
+                            <td class="green-table">От 500 руб.</td>
+                        </tr>
+                        <tr class="row-table4">
+                            <td class="title-table">Сроки окупаемости</td>
+                            <td class="red-table">От полугода</td>
+                            <td class="red-table">В зависимости от курса валюты</td>
+                            <td class="red-table">В зависимости от курса валюты</td>
+                            <td class="green-table">От 1 дня</td>
+                        </tr>
+                        <tr class="row-table5">
+                            <td class="title-table">Доходность</td>
+                            <td class="gray-table">От 10%</td>
+                            <td class="red-table">В зависимости от курса валюты</td>
+                            <td class="red-table">В зависимости от курса валюты</td>
+                            <td class="green-table">От 40%</td>
+                        </tr>
+                        <tr class="row-table6">
+                            <td class="title-table">Безопасность</td>
+                            <td class="green-table">Высокая</td>
+                            <td class="red-table">Низкая</td>
+                            <td class="green-table">Высокая</td>
+                            <td class="green-table">Высокая</td>
+                        </tr>
+                        <tr class="row-table7">
+                            <td class="title-table">Стабильность дохода</td>
+                            <td class="gray-table">Средняя</td>
+                            <td class="red-table">Низкая</td>
+                            <td class="red-table">Низкая</td>
+                            <td class="green-table">Высокая</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="bg6">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 five">
-                <img src="img/five.png" class="img100" alt="five">
-                <!--<p class="main-number3 wow fadeIn" data-wow-duration="3s">5</p>
-                <div class="bg6-ripples wow">
-                    <div class="bg6-ripple1 ripple-1 wow"></div>
-                    <div class="bg6-ripple2 ripple-2 wow"></div>
-                    <div class="bg6-ripple3 ripple-3 wow"></div>
-                </div>-->
-                <h1 class="title-bg6">ПОЧЕМУ ТОРГОВАТЬ КРИПТОВАЛЮТОЙ ВЫГОДНО?</h1>
+    <div class="bg6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 five">
+                    <img src="img/five.png" class="img100" alt="five">
+                    <!--<p class="main-number3 wow fadeIn" data-wow-duration="3s">5</p>
+                    <div class="bg6-ripples wow">
+                        <div class="bg6-ripple1 ripple-1 wow"></div>
+                        <div class="bg6-ripple2 ripple-2 wow"></div>
+                        <div class="bg6-ripple3 ripple-3 wow"></div>
+                    </div>-->
+                    <h1 class="title-bg6">ПОЧЕМУ ТОРГОВАТЬ КРИПТОВАЛЮТОЙ ВЫГОДНО?</h1>
+                </div>
             </div>
-        </div>
-        <div class="row bg7">
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <img class="img100" src="img/clock.gif" alt="">
-                <span class="arrow_left"></span>
-                <p class="box-bg7" style="padding: 43px 10px;">Криптовалютами можно торговать <span
-                            class="red">7 дней</span> в
-                    неделю и 24 часа в сутки. Они не привязаны ко
-                    времени или праздникам. Официального курса
-                    и официальной цены тоже нет. Все это создаёт
-                    просто идеальные условия для арбитража.
-                </p>
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <img class="img100" src="img/world.gif" alt="">
-                <span class="line"></span>
-                <p class="box-bg7">Криптовалюты – <span class="red">это глобальные валюты.</span><br>
-                    Они не привязаны ни к одному государству,
-                    а значит их можно считать в какой-то мере
-                    независимыми. Конечно, на них влияют
-                    события, которые происходятв мире. Кризисы
-                    очень сильно сказываются на стоимости
-                    криптовалют. Владельцы крупных счетов
-                    обратили внимание именно на них потому,
-                    что <span class="red">контролю эти валюты не поддаются.</span>
-                </p>
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <img class="img100" src="img/schedule.gif" alt="">
-                <span class="arrow_right"></span>
-                <p class="box-bg7" style="padding: 45px 10px">Криптовалюты – <span class="red">это высокая волатильность.</span>
-                    Цены за последние несколько месяцев
-                    менялись с поразительной скоростью. Высокая
-                    волатильность также создаёт <span class="red">отличные условия
+            <div class="row bg7">
+                <div class="col-md-4 col-xs-4 col-sm-4">
+                    <img class="img100" src="img/clock.gif" alt="">
+                    <span class="arrow_left"></span>
+                    <p class="box-bg7" style="padding: 43px 10px;">Криптовалютами можно торговать <span
+                                class="red">7 дней</span> в
+                        неделю и 24 часа в сутки. Они не привязаны ко
+                        времени или праздникам. Официального курса
+                        и официальной цены тоже нет. Все это создаёт
+                        просто идеальные условия для арбитража.
+                    </p>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4">
+                    <img class="img100" src="img/world.gif" alt="">
+                    <span class="line"></span>
+                    <p class="box-bg7">Криптовалюты – <span class="red">это глобальные валюты.</span><br>
+                        Они не привязаны ни к одному государству,
+                        а значит их можно считать в какой-то мере
+                        независимыми. Конечно, на них влияют
+                        события, которые происходятв мире. Кризисы
+                        очень сильно сказываются на стоимости
+                        криптовалют. Владельцы крупных счетов
+                        обратили внимание именно на них потому,
+                        что <span class="red">контролю эти валюты не поддаются.</span>
+                    </p>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4">
+                    <img class="img100" src="img/schedule.gif" alt="">
+                    <span class="arrow_right"></span>
+                    <p class="box-bg7" style="padding: 45px 10px">Криптовалюты – <span class="red">это высокая волатильность.</span>
+                        Цены за последние несколько месяцев
+                        менялись с поразительной скоростью. Высокая
+                        волатильность также создаёт <span class="red">отличные условия
                         для трейдинга.</span>
-                </p>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="bg8">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <img src="img/six.png" class="img100" alt="six">
-                <!--<p class="main-number4 wow fadeIn" data-wow-duration="3s">6</p>
-                <div class="bg8-ripples wow">
-                    <div class="bg8-ripple1 ripple-1 wow"></div>
-                    <div class="bg8-ripple2 ripple-2 wow"></div>
-                    <div class="bg8-ripple3 ripple-3 wow"></div>
-                </div>-->
-                <span class="line_left"></span>
-                <span class="line"></span>
+    <div class="bg8">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <img src="img/six.png" class="img100" alt="six">
+                    <!--<p class="main-number4 wow fadeIn" data-wow-duration="3s">6</p>
+                    <div class="bg8-ripples wow">
+                        <div class="bg8-ripple1 ripple-1 wow"></div>
+                        <div class="bg8-ripple2 ripple-2 wow"></div>
+                        <div class="bg8-ripple3 ripple-3 wow"></div>
+                    </div>-->
+                    <span class="line_left"></span>
+                    <span class="line"></span>
+                </div>
             </div>
-        </div>
-        <div class="row bg9">
-            <div class="col-md-12">
-                <h1 class="title-bg9">ТОРГОВЛЯ НА БИРЖЕ.</h1>
+            <div class="row bg9">
+                <div class="col-md-12">
+                    <h1 class="title-bg9">ТОРГОВЛЯ НА БИРЖЕ.</h1>
+                </div>
             </div>
-        </div>
-        <div class="row bg10">
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <img class="img100" src="img/birja-1.png" alt="">
-                <span class="line_bottom wow"></span>
-            </div>
-            <div class="col-md-6 col-xs-6 col-sm-6">
-                <p class="text-bg9">Принципы торговли <br><br>
+            <div class="row bg10">
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <img class="img100" src="img/birja-1.png" alt="">
+                    <span class="line_bottom wow"></span>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6">
+                    <p class="text-bg9">Принципы торговли <br><br>
 
-                    <span class="red">Обменные операции</span> и спекуляции на биржах криптовалют <span class="red">идентичны
+                        <span class="red">Обменные операции</span> и спекуляции на биржах криптовалют <span class="red">идентичны
                         любой другой.</span> Для получения прибыли <span class="red">надо купить подешевле, продать
                         подороже.</span> То есть, <span class="red">точно также,</span> как и при инвестициях <span
-                            class="red">в обычную валюту.</span>
-                    Естественно, что база инструментов и принцип определения целей для
-                    торговли ставятся таким же образом, как и на рынках ценных бумаг или
-                    форексе. </p>
+                                class="red">в обычную валюту.</span>
+                        Естественно, что база инструментов и принцип определения целей для
+                        торговли ставятся таким же образом, как и на рынках ценных бумаг или
+                        форексе. </p>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4 bg9-img">
+                    <img src="img/buy-sell.png" alt="buy-sell">
+                    <!--<p class="bg9-img-text">Пример содержания диверсифицированного
+                        инвестиционного портфеля</p>-->
+                </div>
             </div>
-            <div class="col-md-4 col-xs-4 col-sm-4 bg9-img">
-                <img src="img/buy-sell.png" alt="buy-sell">
-                <!--<p class="bg9-img-text">Пример содержания диверсифицированного
-                    инвестиционного портфеля</p>-->
+            <div class="row bg11">
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <span class="line_bottom_sec wow"></span>
+                    <img class="img100" src="img/birja-2.png" alt="">
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6">
+                    <p class="text-bg9">Создание диверсифицированного инвестиционного портфеля
+                        <br><br>
+                        Прием, который поможет вам зарабатывать на бирже криптовалют
+                        <span class="red">с минимальными рисками</span> – это создание инвестиционного портфеля.
+                        А именно, <span class="red">приобретение не одной криптовалюты, а сразу нескольких.</span></p>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4 bg9-img">
+                    <img src="img/birji.png" class="birji-img" alt="birji">
+                </div>
             </div>
-        </div>
-        <div class="row bg11">
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <span class="line_bottom_sec wow"></span>
-                <img class="img100" src="img/birja-2.png" alt="">
-            </div>
-            <div class="col-md-6 col-xs-6 col-sm-6">
-                <p class="text-bg9">Создание диверсифицированного инвестиционного портфеля
-                    <br><br>
-                    Прием, который поможет вам зарабатывать на бирже криптовалют
-                    <span class="red">с минимальными рисками</span> – это создание инвестиционного портфеля.
-                    А именно, <span class="red">приобретение не одной криптовалюты, а сразу нескольких.</span></p>
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4 bg9-img">
-                <img src="img/birji.png" class="birji-img" alt="birji">
-            </div>
-        </div>
-        <div class="row popular-row">
-            <div class="col-md-2 col-xs-2 col-sm-2">
-                <span class="line_bottom_last wow"></span>
+            <div class="row popular-row">
+                <div class="col-md-2 col-xs-2 col-sm-2">
+                    <span class="line_bottom_last wow"></span>
 
-                <img class="img100" src="img/birja-3.png" alt="">
+                    <img class="img100" src="img/birja-3.png" alt="">
+                </div>
+                <div class="col-md-10 col-xs-10 col-sm-10">
+                    <p class="popular-text">Популярные биржи криптовалют</p>
+                </div>
             </div>
-            <div class="col-md-10 col-xs-10 col-sm-10">
-                <p class="popular-text">Популярные биржи криптовалют</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-xs-4 col-sm-4 col3">
-                <img class="birji" src="img/exmo.png" alt="exmo">
-                <p class="birji-text">EXMO — биржа криптовалют работает с
-                    2013 года, где можно вводить и выводить
-                    доллары, рубли и евро. То есть можно
-                    перевести деньги со Сбербанка на биржу
-                    и дешево купить любую криптовалюту!
-                    Самые ходовые пары считаются BTC/USD,
-                    BTC/RUB, ETH/USD и DASH/RUB.
-                    Переводы внутри сети осуществляются
-                    за несколько секунд, а <span class="red">вывод средств
+            <div class="row">
+                <div class="col-md-4 col-xs-4 col-sm-4 col3">
+                    <img class="birji" src="img/exmo.png" alt="exmo">
+                    <p class="birji-text">EXMO — биржа криптовалют работает с
+                        2013 года, где можно вводить и выводить
+                        доллары, рубли и евро. То есть можно
+                        перевести деньги со Сбербанка на биржу
+                        и дешево купить любую криптовалюту!
+                        Самые ходовые пары считаются BTC/USD,
+                        BTC/RUB, ETH/USD и DASH/RUB.
+                        Переводы внутри сети осуществляются
+                        за несколько секунд, а <span class="red">вывод средств
                         идет от 5 до 30 минут.</span></p>
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4 col3-1">
-                <img class="birji" src="img/bitfinex.png" alt="bitfinex">
-                <p class="birji-text birji-text-padding">Bitfinex. Одна из крупнейших бирж по
-                    объему торговли. Как и на фондовом
-                    рынке, имеется возможность
-                    осуществлять <span class="red">маржинальную торговлю,</span>
-                    без маржи и заниматься брокерством,
-                    которое обеспечивает для других игроков
-                    возможность торговать на бирже с маржей.</p>
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4 col3-1">
-                <img class="birji" src="img/bittrex.png" alt="bittrex">
-                <p class="birji-text">Bittrex работает с 2015 года и позволяет
-                    работать с тысячами криптовалютных пар,
-                    имеет двухфакторную авторизацию и
-                    холодное хранение активов большинства
-                    пользователей для защиты от возможных
-                    системных сбоев. Эта биржа, возможно,
-                    <span class="red">одна из самых безопасных</span> платформ для
-                    онлайн-торговли, так как ее создатели
-                    называют себя «параноиками
-                    безопасности».</p>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4 col3-1">
+                    <img class="birji" src="img/bitfinex.png" alt="bitfinex">
+                    <p class="birji-text birji-text-padding">Bitfinex. Одна из крупнейших бирж по
+                        объему торговли. Как и на фондовом
+                        рынке, имеется возможность
+                        осуществлять <span class="red">маржинальную торговлю,</span>
+                        без маржи и заниматься брокерством,
+                        которое обеспечивает для других игроков
+                        возможность торговать на бирже с маржей.</p>
+                </div>
+                <div class="col-md-4 col-xs-4 col-sm-4 col3-1">
+                    <img class="birji" src="img/bittrex.png" alt="bittrex">
+                    <p class="birji-text">Bittrex работает с 2015 года и позволяет
+                        работать с тысячами криптовалютных пар,
+                        имеет двухфакторную авторизацию и
+                        холодное хранение активов большинства
+                        пользователей для защиты от возможных
+                        системных сбоев. Эта биржа, возможно,
+                        <span class="red">одна из самых безопасных</span> платформ для
+                        онлайн-торговли, так как ее создатели
+                        называют себя «параноиками
+                        безопасности».</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<div class="row9">
-    <div class="container">
-        <div class="row birji-img-2">
-            <div class="col-md-6 col6 col-xs-6 col-sm-6">
-                <img src="img/bihance.png" alt="bihance">
-                <p class="birji-text-2">Криптовалютная биржа Binance это
-                    относительно новая биржа, которая начала
-                    работу в 2017 году, и за это время она
-                    получила популярность среди
-                    пользователей. Сейчас биржа Binance
-                    <span class="red">входит в ТОП-5 бирж</span> по суточному объему
-                    торгов. Штаб квартира биржи Binance
-                    <span class="red">находится в Гонконге,</span> что <span class="red">дает</span> большую
-                    <span class="red">надежность</span> чем юрисдикции прочих бирж.
-                </p>
-            </div>
-            <div class="col-md-6 col-xs-6 col-sm-6 col6-1">
-                <img src="img/poloniex.png" alt="poloniex">
-                <p class="birji-text-2">Poloniex (Полоникс) — <span class="red">самая крупная</span> и
-                    известная биржа криптовалют в мире. На
-                    ней можно купить или продать все
-                    популярные пары. Она начала работать в
-                    2014 году и достаточно быстро за счет
-                    высокой степени надежности вышла на
-                    первое место по суточному объему
-                    торговли. Опытные трейдеры часто
-                    называют эту площадку <span class="red">«Поло».</span>
-                    Биржей пользуется более <span class="red">45 тысяч
+    <div class="row9">
+        <div class="container">
+            <div class="row birji-img-2">
+                <div class="col-md-6 col6 col-xs-6 col-sm-6">
+                    <img src="img/bihance.png" alt="bihance">
+                    <p class="birji-text-2">Криптовалютная биржа Binance это
+                        относительно новая биржа, которая начала
+                        работу в 2017 году, и за это время она
+                        получила популярность среди
+                        пользователей. Сейчас биржа Binance
+                        <span class="red">входит в ТОП-5 бирж</span> по суточному объему
+                        торгов. Штаб квартира биржи Binance
+                        <span class="red">находится в Гонконге,</span> что <span class="red">дает</span> большую
+                        <span class="red">надежность</span> чем юрисдикции прочих бирж.
+                    </p>
+                </div>
+                <div class="col-md-6 col-xs-6 col-sm-6 col6-1">
+                    <img src="img/poloniex.png" alt="poloniex">
+                    <p class="birji-text-2">Poloniex (Полоникс) — <span class="red">самая крупная</span> и
+                        известная биржа криптовалют в мире. На
+                        ней можно купить или продать все
+                        популярные пары. Она начала работать в
+                        2014 году и достаточно быстро за счет
+                        высокой степени надежности вышла на
+                        первое место по суточному объему
+                        торговли. Опытные трейдеры часто
+                        называют эту площадку <span class="red">«Поло».</span>
+                        Биржей пользуется более <span class="red">45 тысяч
                         пользователей.</span>
-                </p>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -1388,7 +1419,7 @@ require_once "db.php";
         <div class="row">
             <div class="col-md-12">
                 <span class="last_line"></span>
-                <img class="img100" src="img/six.png" alt="seven">
+                <img class="img100 hidden-xs hidden-sm" src="img/six.png" alt="seven">
                 <!--<p class="main-number5 wow fadeIn" data-wow-delay="1s" data-wow-duration="3s">7</p>
                 <div class="bg12-ripples wow">
                     <div class="bg12-ripple1 ripple-1 wow"></div>
@@ -1438,27 +1469,30 @@ require_once "db.php";
                 <script type="text/javascript" src="//vk.com/js/api/openapi.js?153"></script>
 
                 <!-- VK Widget -->
-                <div id="vk_groups"></div>
+                <div id="vk_groups" class="hidden-xs hidden-sm"></div>
                 <script type="text/javascript">
                     VK.Widgets.Group("vk_groups", {mode: 3, width: "300"}, 156978466);
                 </script>
-                <iframe src="//widget.instagramm.ru/?imageW=3&imageH=2&thumbnail_size=74&type=0&typetext=cristiano&head_show=1&profile_show=1&shadow_show=1&bg=255,255,255,1&opacity=true&head_bg=46729b&subscribe_bg=ad4141&border_color=c3c3c3&head_title=" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:260px;height:313px;"></iframe>            </div>
+                <iframe  class="hidden-xs hidden-sm" src="//widget.instagramm.ru/?imageW=3&imageH=2&thumbnail_size=74&type=0&typetext=cristiano&head_show=1&profile_show=1&shadow_show=1&bg=255,255,255,1&opacity=true&head_bg=46729b&subscribe_bg=ad4141&border_color=c3c3c3&head_title="
+                        allowtransparency="true" frameborder="0" scrolling="no"
+                        style="border:none;overflow:hidden;width:260px;height:313px;"></iframe>
+            </div>
         </div>
     </div>
 </div>
 <div class="footer-reg centered">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-xs-4 col-sm-4 col-footer1">
+            <div class="col-md-4 col-xs-12 col-sm-12 col-footer1">
                 <img src="img/btcstar.png" class="btcstar" alt="">
                 <p class="info">Закрытый трейдерский клуб. <br>
                     Платные сигналы, аналитика. <br>
                     Новости криптовалют.</p>
             </div>
-            <div class="col-md-3 col-xs-3 col-sm-3">
+            <div class="col-md-3 col-xs-12 col-sm-12">
                 <p class="copyright">&copy; 2017-2018 StarBitClub.</p>
             </div>
-            <div class="col-md-4 col-xs-4 col-sm-4 col-money">
+            <div class="col-md-4 col-xs-12 col-sm-12 col-money">
                 <ul>
                     <li><img src="img/visa.png" alt=""></li>
                     <li><img src="img/mastercard.png" alt=""></li>
@@ -1466,7 +1500,7 @@ require_once "db.php";
                     <li><img src="img/yandex.png" alt=""></li>
                 </ul>
             </div>
-            <div class="col-md-1 col-xs-1 col-sm-1 col-footer4">
+            <div class="col-md-1 col-xs-12 col-sm-12 col-footer4">
                 <img src="img/logo-main-new.png" class="logo-footer" alt="">
                 <p><a href="#">Пользовательское соглашение</a></p>
             </div>
@@ -1497,13 +1531,16 @@ require_once "db.php";
         <form id="consultForm">
             <input type="hidden" name="title" value="Форма Бесплатная консультация">
             <label class="labelForConsult1" for="consultForm__input1"></label>
-            <input type="tel" required placeholder="+7(___)___-__-__" name="consultPhone" id="consultForm__input1" class="consultForm__input1">
+            <input type="tel" required placeholder="+7(___)___-__-__" name="consultPhone" id="consultForm__input1"
+                   class="consultForm__input1">
             <label class="labelForConsult2" for="consultForm__input2"></label>
-            <input type="text" required placeholder="Ваше Имя" id="consultForm__input2" name="consultName" class="consultForm__input2">
+            <input type="text" required placeholder="Ваше Имя" id="consultForm__input2" name="consultName"
+                   class="consultForm__input2">
             <button type="submit" class="consultForm__btn">Заказать звонок</button>
             <div id="resultQuestion" style="color: limegreen; text-align: center;"></div>
         </form>
-        <p class="consult__desc">Нажимая на кнопку, вы соглашаетесь с нашей <a href="">политикой конфиденциальности</a></p>
+        <p class="consult__desc">Нажимая на кнопку, вы соглашаетесь с нашей <a href="">политикой конфиденциальности</a>
+        </p>
     </div>
 </div>
 
@@ -1545,13 +1582,13 @@ if ($akcia_banner == 1) {
         //ЗАПИСЬ В КУКИ
         $('.closeSecond').click(function () {
             $('#secondModal').css("display", "none");
-            $.cookie("secondModal", "12house", {expires: 0} );
+            $.cookie("secondModal", "12house", {expires: 0});
         });
 
         //ЗАПИСЬ В КУКИ
         $('.close__popup1').click(function () {
             $('.popup_learn').css("display", "none");
-            $.cookie("popup__learn", "12house", {expires: 0} );
+            $.cookie("popup__learn", "12house", {expires: 0});
         });
 
         $('.btn-logo').click(function () {
@@ -1566,7 +1603,7 @@ if ($akcia_banner == 1) {
         //ПОПАП КОНКУРС
 
         $(document).ready(function ($) {
-            if ( $.cookie("secondModal") == null ) {
+            if ($.cookie("secondModal") == null) {
                 var banner = $('#secondModal');
                 $(window).scroll(function () {
                     if ($(this).scrollTop() > 2000 && $(this).scrollTop() < 2020) {
@@ -1582,7 +1619,7 @@ if ($akcia_banner == 1) {
         //ПОПАП ОБУЧЕНИЕ
 
         $(document).ready(function ($) {
-            if ( $.cookie("popup__learn") == null ) {
+            if ($.cookie("popup__learn") == null) {
                 var popupLearn = $('.popup_learn');
                 $(window).scroll(function () {
                     if ($(this).scrollTop() > 7000 && $(this).scrollTop() < 7020) {
@@ -1642,45 +1679,59 @@ if ($akcia_banner == 1) {
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117114324-1"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
 
     gtag('config', 'UA-117114324-1');
 </script>
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script type="text/javascript">
     (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
+        (w[c] = w[c] || []).push(function () {
             try {
                 w.yaCounter48373727 = new Ya.Metrika({
-                    id:48373727,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
+                    id: 48373727,
+                    clickmap: true,
+                    trackLinks: true,
+                    accurateTrackBounce: true,
+                    webvisor: true
                 });
-            } catch(e) { }
+            } catch (e) {
+            }
         });
 
         var n = d.getElementsByTagName("script")[0],
             s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
+            f = function () {
+                n.parentNode.insertBefore(s, n);
+            };
         s.type = "text/javascript";
         s.async = true;
         s.src = "https://mc.yandex.ru/metrika/watch.js";
 
         if (w.opera == "[object Opera]") {
             d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
+        } else {
+            f();
+        }
     })(document, window, "yandex_metrika_callbacks");
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/48373727" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript>
+    <div><img src="https://mc.yandex.ru/watch/48373727" style="position:absolute; left:-9999px;" alt=""/></div>
+</noscript>
 <!-- /Yandex.Metrika counter -->
-<script data-skip-moving="true">
-    (function(w,d,u){
-        var s=d.createElement('script');s.async=1;s.src=u+'?'+(Date.now()/60000|0);
-        var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
-    })(window,document,'https://cdn.bitrix24.ru/b6766487/crm/site_button/loader_2_7nsjuk.js');
+<script data-skip-moving="true" async>
+    (function (w, d, u) {
+        var s = d.createElement('script');
+        s.async = 1;
+        s.src = u + '?' + (Date.now() / 60000 | 0);
+        var h = d.getElementsByTagName('script')[0];
+        h.parentNode.insertBefore(s, h);
+    })(window, document, 'https://cdn.bitrix24.ru/b6766487/crm/site_button/loader_2_7nsjuk.js');
 </script>
 </body>
 </html>

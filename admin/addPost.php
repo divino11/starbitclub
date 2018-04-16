@@ -101,7 +101,6 @@ if (isset($_POST['add-post']) && $_POST['selectPost'] == 'news') {
 </div>
 <div class="form-reg">
     <div class="container">
-        <img src="../img/benefits-logo.png" class="logo-reg" alt="">
         <div class="form-white-reg">
             <div class="admin-add-post">
                 <div class="row">
@@ -149,7 +148,7 @@ if (isset($_POST['add-post']) && $_POST['selectPost'] == 'news') {
         </div>
     </div>
 </div>
-<script type="text/javascript" src="../editor/ckeditor.js"></script>
+<script type="text/javascript" src="editor/ckeditor.js"></script>
 <script type="text/javascript">
     CKEDITOR.replace('editor2');
 </script>

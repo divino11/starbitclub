@@ -8,13 +8,18 @@ if (isset($_POST['register_btn'])) {
     $email = $_POST['email-reg'];
     $pass = $_POST['pas-reg'];
     $rePass = $_POST['re-pas-reg'];
+    $query = 'SELECT * FROM `auth` WHERE email = "' . $email .'"';
+    $result = mysqli_query($link, $query); //ответ базы запишем в переменную $result
+    $user = mysqli_fetch_assoc($result); //преобразуем ответ из БД в нормальный массив PHP
+    $email_db = $user['email'];
     if ($pass == $rePass) {
-        $sql = mysqli_query($link, "INSERT INTO `auth` (`lastname`, `firstname`, `email`, `password`) 
+        if ($email != $email_db) {
+            $sql = mysqli_query($link, "INSERT INTO `auth` (`lastname`, `firstname`, `email`, `password`) 
                         VALUES ('$lastname', '$firstname', '$email', '$pass')");
-        mail(
-            $email,
-            'Поздравляем с регистрацией',
-            '<html><body><div style="width: 500px; margin: auto; display: block;">
+            mail(
+                $email,
+                'Поздравляем с регистрацией',
+                '<html><body><div style="width: 500px; margin: auto; display: block;">
     <table align="center" style="background-color: #000; color: #fff;">
         <tr style="text-align: center;">
             <th><img style="width: 80px;" src="https://starbitclub.com/img/logo-letter.png" alt=""></th>
@@ -79,25 +84,28 @@ if (isset($_POST['register_btn'])) {
         </tr>
     </table>
 </div></body></html>',
-            "From: admin@starbitclub.com\r\n"
-            . "Content-type: text/html; charset=utf-8\r\n"
-            . "X-Mailer: PHP mail script"
-        );
+                "From: admin@starbitclub.com\r\n"
+                . "Content-type: text/html; charset=utf-8\r\n"
+                . "X-Mailer: PHP mail script"
+            );
 
-        $query = 'SELECT * FROM `auth` WHERE email = "' . $email . '" AND password = "' . $pass . '"';
-        $result = mysqli_query($link, $query); //ответ базы запишем в переменную $result
-        $user = mysqli_fetch_assoc($result); //преобразуем ответ из БД в нормальный массив PHP
+            $query = 'SELECT * FROM `auth` WHERE email = "' . $email . '" AND password = "' . $pass . '"';
+            $result = mysqli_query($link, $query); //ответ базы запишем в переменную $result
+            $user = mysqli_fetch_assoc($result); //преобразуем ответ из БД в нормальный массив PHP
 
-        if (!empty($user)) {
-            $_SESSION['lastname'] = $user['lastname'];
-            $_SESSION['firstname'] = $user['firstname'];
-            $_SESSION['email'] = $user['email'];
-            $_SESSION['pass'] = $user['password'];
-            $_SESSION['date'] = $user['date'];
-            $_SESSION['id'] = $user['id'];
-            $congrats = "Регистрация прошла успешно. Поздравляем! Проверьте почту!";
+            if (!empty($user)) {
+                $_SESSION['lastname'] = $user['lastname'];
+                $_SESSION['firstname'] = $user['firstname'];
+                $_SESSION['email'] = $user['email'];
+                $_SESSION['pass'] = $user['password'];
+                $_SESSION['date'] = $user['date'];
+                $_SESSION['id'] = $user['id'];
+                $congrats = "Регистрация прошла успешно. Поздравляем! Проверьте почту!";
 
-            echo '<script>window.location.replace("/lk");</script>';
+                echo '<script>window.location.replace("/lk");</script>';
+            }
+        } else {
+            $bad_pas = "Такая почта уже существует!!!";
         }
     } else {
         $bad_pas = "Пароли не совпадают!";

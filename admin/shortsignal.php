@@ -52,7 +52,7 @@ if (isset($_POST['sendShortSignal'])) {
         </div>
     </div>
 </div>
-<script type="text/javascript" src="../editor/ckeditor.js"></script>
+<script type="text/javascript" src="editor/ckeditor.js"></script>
 <script type="text/javascript">
     CKEDITOR.replace('shortsignal');
 </script>
