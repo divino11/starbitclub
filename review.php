@@ -25,6 +25,9 @@ mysqli_set_charset($link, 'utf8');
     <title>Отзывы о нас</title>
 </head>
 <body>
+<div class="mobile_menu hidden-md hidden-lg">
+    <?php require "template/mobileMenu.php"; ?>
+</div>
 <style>
     #vk_comments {
         width: 100% !important;
@@ -125,5 +128,12 @@ mysqli_set_charset($link, 'utf8');
     <div><img src="https://mc.yandex.ru/watch/48373727" style="position:absolute; left:-9999px;" alt=""/></div>
 </noscript>
 <!-- /Yandex.Metrika counter -->
+<script>
+    $(document).ready(function () {
+        $('.mobile_menu').click(function(){
+            $(".mobile_menu ul").slideToggle( "slow");
+        });
+    });
+</script>
 </body>
 </html>

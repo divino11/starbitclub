@@ -61,6 +61,20 @@ if (isset($_POST['banner_on'])) {
                         <a href="deletePost" class="btn-danger btn-post">Удалить новость</a>
                     </div>
                 </div>
+                <div class="admin-news">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="postToTelegram.php" class="btn-success btn-post">Публикация в телеграмм</a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="viewMainPost.php" class="btn-primary btn-post">Отображение главной
+                                новости\статьи</a>
+                        </div>
+                        <div class="col-md-4">
+                            <!--<a href="deletePost" class="btn-danger btn-post">Удалить новость</a>-->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

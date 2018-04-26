@@ -4,7 +4,7 @@ require_once "db.php";
 header('Content-Type: text/html; charset=utf-8');
 mysqli_set_charset($link, 'utf8');
 $id = $_GET['id'];
-$sql = "SELECT * FROM `news` WHERE id = $id";
+$sql = "SELECT * FROM `article` WHERE id = $id";
 mysqli_set_charset($link, 'utf8');
 $result = mysqli_query($link, $sql);
 while ($row = mysqli_fetch_array($result)) {
@@ -37,9 +37,6 @@ while ($row = mysqli_fetch_array($result)) {
         }
     </style>
     <body>
-    <div class="mobile_menu hidden-md hidden-lg">
-        <?php require "template/mobileMenu.php"; ?>
-    </div>
     <div class="reg-page">
         <?php require_once "template/menu.php"; ?>
     </div>
@@ -68,12 +65,12 @@ while ($row = mysqli_fetch_array($result)) {
                             })();
                         </script>
                         <a id="mc-link" href="http://cackle.me">Комментарии для сайта <b style="color:#4FA3DA">Cackl</b><b
-                                    style="color:#F65077">e</b></a>
+                                style="color:#F65077">e</b></a>
                     </div>
                     <div class="col-md-3 related-news">
                         <p class="title-related-news">Похожие новости</p>
                         <?php
-                        $sql = "SELECT * FROM `news` ORDER BY id DESC";
+                        $sql = "SELECT * FROM `article` ORDER BY id DESC";
                         mysqli_set_charset($link, 'utf8');
                         $result = mysqli_query($link, $sql);
                         while ($row = mysqli_fetch_array($result)) {
@@ -83,9 +80,9 @@ while ($row = mysqli_fetch_array($result)) {
                             $date = $row['date'];
                             ?>
                             <div class="col-md-12">
-                                <a href="/post?id=<?php echo $id_posts; ?>"><img src="/news-img/<?php echo $img; ?>"
-                                                                           class="img-news"></a><br>
-                                <a href="/post?id=<?php echo $id_posts; ?>"
+                                <a href="/article?id=<?php echo $id_posts; ?>"><img src="/news-img/<?php echo $img; ?>"
+                                                                                 class="img-news"></a><br>
+                                <a href="/article?id=<?php echo $id_posts; ?>"
                                    class="title-news"><?php echo $title; ?></a>
                                 <p class="date-post"><?php echo $date; ?></p>
                             </div>
@@ -163,13 +160,6 @@ while ($row = mysqli_fetch_array($result)) {
             var s=d.createElement('script');s.async=1;s.src=u+'?'+(Date.now()/60000|0);
             var h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
         })(window,document,'https://cdn.bitrix24.ru/b6766487/crm/site_button/loader_2_7nsjuk.js');
-    </script>
-    <script>
-        $(document).ready(function () {
-            $('.mobile_menu').click(function(){
-                $(".mobile_menu ul").slideToggle( "slow");
-            });
-        });
     </script>
     </body>
     </html>

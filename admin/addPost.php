@@ -24,8 +24,8 @@ if (isset($_POST['add-post']) && $_POST['selectPost'] == 'news') {
                     $select_category = join(", ",$_POST['select_category']);
                     $author = $_POST['author'];
                     $file = $_FILES["myfiles"]["name"];
-                    $sql = mysqli_query($link, "INSERT INTO `news` (`title`, `img`, `category`, `short_text`, `text`, `author`) 
-                        VALUES ('$title', '$file', '$select_category', '$short_text', '$text', '$author')");
+                    $sql = mysqli_query($link, "INSERT INTO `news` (`type`, `title`, `img`, `category`, `short_text`, `text`, `author`, `mainPost`) 
+                        VALUES ('Новости', '$title', '$file', '$select_category', '$short_text', '$text', '$author', '0')");
                 } else {
                     $message_error = "Произошла ошибка при загрузке файла!";
                 }
@@ -59,8 +59,8 @@ if (isset($_POST['add-post']) && $_POST['selectPost'] == 'news') {
                     $select_category = join(",",$_POST["select_category"]);
                     $author = $_POST['author'];
                     $file = $_FILES["myfiles"]["name"];
-                    $sql = mysqli_query($link, "INSERT INTO `article` (`title`, `img`, `category`, `short_text`, `text`, `author`) 
-                        VALUES ('$title', '$file', '$select_category', '$short_text', '$text', '$author')");
+                    $sql = mysqli_query($link, "INSERT INTO `article` (`type`, `title`, `img`, `category`, `short_text`, `text`, `author`, `mainPost`) 
+                        VALUES ('Статья', '$title', '$file', '$select_category', '$short_text', '$text', '$author', '0')");
                 } else {
                     $message_error = "Произошла ошибка при загрузке файла!";
                 }

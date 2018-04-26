@@ -12,6 +12,16 @@ if (isset($_GET['del_id'])) {
     $img = $row['img'];
     unlink('../news-img/'.$img);
 }
+if (isset($_GET['del_article'])) {
+    $id = $_GET['del_article'];
+    $sql = mysqli_query($link,'DELETE FROM `article` WHERE `id` = '.$_GET['del_article']);
+    $sql = "SELECT * FROM `article` WHERE id = $id";
+    mysqli_set_charset($link, 'utf8');
+    $result = mysqli_query($link, $sql);
+    $row = mysqli_fetch_array($result);
+    $img = $row['img'];
+    unlink('../news-img/'.$img);
+}
 ?>
 <!doctype html>
 <html lang="en">
@@ -41,6 +51,7 @@ if (isset($_GET['del_id'])) {
             <div class="admin-delete-post">
                 <div class="row">
                     <div class="col-md-6">
+                        Новости
                         <?php
                         $sql = "SELECT * FROM `news` ORDER BY id DESC";
                         mysqli_set_charset($link, 'utf8');
@@ -68,7 +79,35 @@ if (isset($_GET['del_id'])) {
                             </div>
                         <?php } ?>
                     </div>
-                    <div class="col-md-6"></div>
+                    <div class="col-md-6">
+                        Статьи
+                        <?php
+                        $sql = "SELECT * FROM `article` ORDER BY id DESC";
+                        mysqli_set_charset($link, 'utf8');
+                        $result = mysqli_query($link, $sql);
+                        while ($row = mysqli_fetch_array($result)) {
+                            $id = $row['id'];
+                            $title = $row['title'];
+                            $file = $row['img'];
+                            $date = $row['date'];
+                            $author = $row['author'];
+                            ?>
+                            <div class="row-posts">
+                                <div class="col-post">
+                                    <p class="title-post"><?php echo $title; ?></p>
+                                </div>
+                                <div class="col-post">
+                                    <p class="author-post"><?php echo $author; ?></p>
+                                </div>
+                                <div class="col-post">
+                                    <p class="date-post"><?php echo $date; ?></p>
+                                </div>
+                                <div class="col-post">
+                                    <a href="?del_article=<?php echo $id;?>">Удалить</a>
+                                </div>
+                            </div>
+                        <?php } ?>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once 'db.php';
+require 'functions.php';
 mysqli_set_charset($link, 'utf8');
 ?>
 <!doctype html>
@@ -14,7 +15,6 @@ mysqli_set_charset($link, 'utf8');
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -33,27 +33,30 @@ mysqli_set_charset($link, 'utf8');
     </style>
 </head>
 <body>
+<div class="mobile_menu hidden-md hidden-lg">
+    <?php require "template/mobileMenu.php"; ?>
+</div>
 <div class="reg-page">
     <?php require_once "template/menu.php"; ?>
 </div>
 <div class="form-reg">
     <div class="container">
         <div class="form-white-reg post-news">
-            <p class="news">Новости</p>
             <div class="row">
                 <div class="col-md-9">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#1" data-toggle="tab">Новости</a></li>
-                        <li><a href="#2" data-toggle="tab">Статьи</a></li>
+                        <li class="active"><a href="#1" data-toggle="tab"><img class="tabsTopSwitch" src="img/news-icon.png">Новости</a></li>
+                        <li><a href="#2" data-toggle="tab"><img class="tabsTopSwitch1" src="img/article.png">Статьи</a></li>
                     </ul>
                     <div class="tab-content ">
                         <div class="tab-pane active" id="1">
                             <?php
-                            $sql = "SELECT * FROM `news` ORDER BY id DESC";
+                            $sql = "SELECT * FROM `news` WHERE mainPost = '1' ORDER BY id DESC";
                             mysqli_set_charset($link, 'utf8');
                             $result = mysqli_query($link, $sql);
                             $row = mysqli_fetch_array($result);
                             $id = $row['id'];
+                            $type = $row['type'];
                             $img = $row['img'];
                             $date = $row['date'];
                             $short_text = $row['short_text'];
@@ -67,99 +70,69 @@ mysqli_set_charset($link, 'utf8');
                                                                                class="img-news"></a><br>
                                     <p class="centered"><a href="/post?id=<?php echo $id; ?>"
                                                            class="title-news"><?php echo $title; ?></a></p>
-                                    <p class="date-news"><?php echo date('d.m.Y H:i', strtotime($date)); ?></p>
+                                    <p class="date-news"><img src="img/clock-icon.png" alt=""><?php whatIsDatePosted($date); ?></p>
+                                    <p class="type-news"><img src="img/news-icon.png" alt=""><?php echo $type; ?></p>
                                     <p class="shorttext"><?php echo $short_text; ?></p>
-                                    <div class="categorys">
-                                        <?php foreach ($categorys as $category) { ?>
-                                            <span class="category"><?php echo $category; ?></span>
-                                        <?php } ?>
-                                    </div>
+                                    <!--<div class="categorys">
+                                        <?php /*foreach ($categorys as $category) { */?>
+                                            <span class="category"><?php /*echo $category; */?></span>
+                                        <?php /*} */?>
+                                    </div>-->
                                     <img src="/news-img/<?php echo $img; ?>" class="img__overlay" alt="">
                                 </div>
                             </div>
-
-                            <?php
-                            $sql = "SELECT * FROM `news` ORDER BY id DESC LIMIT 3 OFFSET 1";
-                            mysqli_set_charset($link, 'utf8');
-                            $result = mysqli_query($link, $sql);
-                            while ($row = mysqli_fetch_array($result)) {
-                                $id = $row['id'];
-                                $img = $row['img'];
-                                $date = $row['date'];
-                                $short_text = $row['short_text'];
-                                $title = $row['title'];
-                                ?>
-                                <div class="col-md-4">
-                                    <a href="/post?id=<?php echo $id; ?>"><img src="/news-img/<?php echo $img; ?>"
-                                                                               class="img__news-second"></a><br>
-                                    <p class="centered"><a href="/post?id=<?php echo $id; ?>"
-                                                           class="title__news-second"><?php echo $title; ?></a></p>
-                                    <p class="date__news-second"><?php echo date('d.m.Y H:i', strtotime($date)); ?></p>
-                                </div>
-                            <?php } ?>
                         </div>
                         <div class="tab-pane" id="2">
                             <?php
-                            $sql = "SELECT * FROM `article` ORDER BY id DESC";
+                            $sql = "SELECT * FROM `article` WHERE mainPost = '1' ORDER BY id DESC";
                             mysqli_set_charset($link, 'utf8');
                             $result = mysqli_query($link, $sql);
                             $row = mysqli_fetch_array($result);
                             $id = $row['id'];
+                            $type = $row['type'];
                             $img = $row['img'];
                             $date = $row['date'];
+                            $categorys = $row['category'];
                             $short_text = $row['short_text'];
                             $title = $row['title'];
+                            $categorys = explode(", ", $categorys);
                             ?>
                             <div class="col-md-12">
                                 <div class="img__main">
-                                    <a href="/post?id=<?php echo $id; ?>"><img src="/news-img/<?php echo $img; ?>"
+                                    <a href="/article?id=<?php echo $id; ?>"><img src="/news-img/<?php echo $img; ?>"
                                                                                class="img-news"></a><br>
-                                    <p class="centered"><a href="/post?id=<?php echo $id; ?>"
+                                    <p class="centered"><a href="/article?id=<?php echo $id; ?>"
                                                            class="title-news"><?php echo $title; ?></a></p>
-                                    <p class="date-news"><?php echo date('d.m.Y H:i', strtotime($date)); ?></p>
+                                    <p class="date-news"><img src="img/clock-icon.png" alt=""><?php whatIsDatePosted($date); ?></p>
+                                    <p class="type-news"><img src="img/article.png" alt=""><?php echo $type; ?></p>
                                     <p class="shorttext"><?php echo $short_text; ?></p>
+                                    <!--<div class="categorys">
+                                        <?php /*foreach ($categorys as $category) { */?>
+                                            <span class="category"><?php /*echo $category; */?></span>
+                                        <?php /*} */?>
+                                    </div>-->
                                     <img src="/news-img/<?php echo $img; ?>" class="img__overlay" alt="">
                                 </div>
                             </div>
-
-                            <?php
-                            $sql = "SELECT * FROM `article` ORDER BY id DESC LIMIT 3 OFFSET 1";
-                            mysqli_set_charset($link, 'utf8');
-                            $result = mysqli_query($link, $sql);
-                            while ($row = mysqli_fetch_array($result)) {
-                                $id = $row['id'];
-                                $img = $row['img'];
-                                $date = $row['date'];
-                                $short_text = $row['short_text'];
-                                $title = $row['title'];
-                                ?>
-                                <div class="col-md-4">
-                                    <a href="/post?id=<?php echo $id; ?>"><img src="/news-img/<?php echo $img; ?>"
-                                                                               class="img__news-second"></a><br>
-                                    <p class="centered"><a href="/post?id=<?php echo $id; ?>"
-                                                           class="title__news-second"><?php echo $title; ?></a></p>
-                                    <p class="date__news-second"><?php echo date('d.m.Y H:i', strtotime($date)); ?></p>
-                                </div>
-                            <?php } ?>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-md-3">
                     <ul class="nav nav-tabs">
-                        <li class="active"><a href="#hot1" data-toggle="tab">Новости</a></li>
-                        <li><a href="#hot2" data-toggle="tab">Статьи</a></li>
+                        <li class="active"><a href="#hot1" data-toggle="tab"><img class="tabsHotSwitch" src="img/hot-post.png">Горячее</a></li>
+                        <li><a href="#hot2" data-toggle="tab"><img class="tabsHotSwitch1" src="img/clock-icon.png">Свежее</a></li>
                     </ul>
 
                     <div class="tab-content ">
                         <div class="tab-pane active" id="hot1">
                             <?php
-                            $sql = "SELECT * FROM `news` ORDER BY id DESC LIMIT 5";
+                            $sql = "SELECT * FROM `news` ORDER BY id DESC LIMIT 10";
                             mysqli_set_charset($link, 'utf8');
                             $result = mysqli_query($link, $sql);
                             while ($row = mysqli_fetch_array($result)) {
                                 $id = $row['id'];
                                 $img = $row['img'];
+                                $type = $row['type'];
                                 $date = $row['date'];
                                 $short_text = $row['short_text'];
                                 $title = $row['title'];
@@ -167,7 +140,8 @@ mysqli_set_charset($link, 'utf8');
                                 <div class="col-md-12 hotPosts">
                                     <a href="/post?id=<?php echo $id; ?>"
                                        class="title__news-second"><?php echo $title; ?></a>
-                                    <p class="date__news-second"><?php echo date('d.m.Y H:i', strtotime($date)); ?></p>
+                                    <p class="date__news-hot"><img src="img/clock-icon.png" alt=""><?php whatIsDatePosted($date); ?></p>
+                                    <p class="type-news-hot"><img src="img/article.png" alt=""><?php echo $type; ?></p>
                                 </div>
                             <?php } ?>
                         </div>
@@ -179,20 +153,45 @@ mysqli_set_charset($link, 'utf8');
                             while ($row = mysqli_fetch_array($result)) {
                                 $id = $row['id'];
                                 $img = $row['img'];
+                                $type = $row['type'];
                                 $date = $row['date'];
                                 $short_text = $row['short_text'];
                                 $title = $row['title'];
                                 ?>
                                 <div class="col-md-12 hotPosts">
-                                    <a href="/post?id=<?php echo $id; ?>"
-                                       class="title__news-second"><?php echo $title; ?></a>
-                                    <p class="date__news-second"><?php echo date('d.m.Y H:i', strtotime($date)); ?></p>
+                                    <a href="/article?id=<?php echo $id; ?>"
+                                       class="title__news-hot"><?php echo $title; ?></a>
+                                    <br>
+                                    <span class="date__news-hot"><img src="img/clock-icon.png" alt=""><?php whatIsDatePosted($date); ?></span>
+                                    <span class="type-news-hot"><img src="img/article.png" alt=""><?php echo $type; ?></span>
                                 </div>
                             <?php } ?>
                         </div>
                     </div>
                 </div>
-
+                <?php
+                $sql = "SELECT * FROM `article` WHERE mainPost = '0' ORDER BY id DESC";
+                mysqli_set_charset($link, 'utf8');
+                $result = mysqli_query($link, $sql);
+                while ($row = mysqli_fetch_array($result)) {
+                    $id = $row['id'];
+                    $img = $row['img'];
+                    $type = $row['type'];
+                    $date = $row['date'];
+                    $short_text = $row['short_text'];
+                    $title = $row['title'];
+                    ?>
+                    <div class="col-md-4">
+                        <div class="wrapper_img">
+                            <div class="allPost-overlay"></div>
+                        <a href="/article?id=<?php echo $id; ?>"><img src="/news-img/<?php echo $img; ?>"
+                                                                      class="img__news-second"></a></div><br>
+                        <p class="centered"><a href="/article?id=<?php echo $id; ?>"
+                                               class="title__news-second"><?php echo $title; ?></a></p>
+                        <p class="date__news-second"><img src="img/clock-icon.png" alt=""><?php whatIsDatePosted($date); ?></p>
+                        <p class="type-news-other"><img src="img/article.png" alt=""><?php echo $type; ?></p>
+                    </div>
+                <?php } ?>
             </div>
         </div>
     </div>
@@ -279,6 +278,13 @@ mysqli_set_charset($link, 'utf8');
         var h = d.getElementsByTagName('script')[0];
         h.parentNode.insertBefore(s, h);
     })(window, document, 'https://cdn.bitrix24.ru/b6766487/crm/site_button/loader_2_7nsjuk.js');
+</script>
+<script>
+    $(document).ready(function () {
+        $('.mobile_menu').click(function(){
+            $(".mobile_menu ul").slideToggle( "slow");
+        });
+    });
 </script>
 </body>
 </html>

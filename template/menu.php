@@ -29,9 +29,9 @@
                 </ul>
             </div>
             <div class="col-md-2">
-                <a href="https://www.instagram.com/bitcoin_stars/"><img class="social-menu" src="../img/insta.png" alt="instagram"></a>
-                <a href="https://www.youtube.com/channel/UCPx7Yj8ra7FKTwEmG5SNiRw?view_as=subscriber"><img class="social-menu" src="../img/yt.png" alt="youtube"></a>
-                <a href="https://vk.com/bitcoinstars"><img class="social-menu" src="../img/vk.png" alt="vk"></a>
+                <a href="https://www.instagram.com/starbitclub_official/"><img class="social-menu" src="../img/insta.png" alt="instagram"></a>
+                <a href="https://www.youtube.com/channel/UCPx7Yj8ra7FKTwEmG5SNiRw"><img class="social-menu" src="../img/yt.png" alt="youtube"></a>
+                <a href="https://vk.com/starbitclub"><img class="social-menu" src="../img/vk.png" alt="vk"></a>
             </div>
         </div>
     </div>

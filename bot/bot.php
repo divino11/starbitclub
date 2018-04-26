@@ -356,7 +356,7 @@ Skype:
             $telegram->sendMessage(['chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $reply_markup]);
         } elseif ($text == "Закрытый телеграмм канал") {
             $reply = "https://t.me/joinchat/AAAAAE6yTOiQs46Tc1yF6w";
-            $reply_markup = $telegram->replyKeyboardMarkup(['keyboard' => $keyboard_level3, 'resize_keyboard' => true, 'one_time_keyboard' => false]);
+            $reply_markup = $telegram->replyKeyboardMarkup(['keyboard' => $keyboard_level2, 'resize_keyboard' => true, 'one_time_keyboard' => false]);
             $telegram->sendMessage(['chat_id' => $chat_id, 'text' => $reply, 'reply_markup' => $reply_markup]);
         } elseif ($text == "Пройти обучение") {
             $reply = "1⃣ https://www.youtube.com/watch?v=5zcdvsFIPfM&feature=youtu.be \n

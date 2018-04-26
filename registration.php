@@ -123,7 +123,6 @@ if (isset($_POST['register_btn'])) {
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -135,6 +134,9 @@ if (isset($_POST['register_btn'])) {
     }
 </style>
 <body>
+<div class="mobile_menu hidden-md hidden-lg">
+    <?php require "template/mobileMenu.php"; ?>
+</div>
 <div class="reg-page">
     <?php require_once "template/menu.php"; ?>
 </div>
@@ -148,7 +150,7 @@ if (isset($_POST['register_btn'])) {
             </div>
             <div class="row">
                 <div class="col-md-9">
-                    <div class="col-md-5">
+                    <div class="col-md-5 hidden-xs hidden-sm">
                         <label for="lastname" class="label-reg">Фамилия</label>
                         <label for="firstname" class="label-reg">Имя</label>
                         <label for="email-reg" class="label-reg">E-mail</label>
@@ -157,12 +159,12 @@ if (isset($_POST['register_btn'])) {
                     </div>
                     <div class="col-md-7">
                         <form action="registration" method="post">
-                            <input type="text" required minlength="3" class="field-reg" name="lastname" id="lastname">
-                            <input type="text" required minlength="3" class="field-reg" name="firstname" id="firstname">
-                            <input type="email" required minlength="5" class="field-reg" name="email-reg"
+                            <input type="text" placeholder="Ваша фамилия" required minlength="3" class="field-reg" name="lastname" id="lastname">
+                            <input type="text" placeholder="Ваше имя" required minlength="3" class="field-reg" name="firstname" id="firstname">
+                            <input type="email" placeholder="Ваш email" required minlength="5" class="field-reg" name="email-reg"
                                    id="email-reg">
-                            <input type="password" required minlength="6" class="field-reg" name="pas-reg" id="pas-reg">
-                            <input type="password" required minlength="6" class="field-reg" name="re-pas-reg"
+                            <input type="password" placeholder="Ваш пароль" required minlength="6" class="field-reg" name="pas-reg" id="pas-reg">
+                            <input type="password" placeholder="Повторите пароль" required minlength="6" class="field-reg" name="re-pas-reg"
                                    id="re-pas-reg">
                             <div class="rotateleft"><input type="checkbox" required class="check-reg"> <span
                                         class="confirm-user">Я ознакомлен и согласен с условиями <a
@@ -252,6 +254,13 @@ if (isset($_POST['register_btn'])) {
             f();
         }
     })(document, window, "yandex_metrika_callbacks");
+</script>
+<script>
+    $(document).ready(function () {
+        $('.mobile_menu').click(function(){
+            $(".mobile_menu ul").slideToggle( "slow");
+        });
+    });
 </script>
 <noscript>
     <div><img src="https://mc.yandex.ru/watch/48373727" style="position:absolute; left:-9999px;" alt=""/></div>
